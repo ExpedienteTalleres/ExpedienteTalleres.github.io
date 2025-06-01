@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const filePath = `${selectedYear}/${selectedTournament}`;
             window.location.href = filePath;
         } else {
-            warningMessage.classList.remove('hidden');
+            warningMessage.style.display = 'none';
         }
     });
 });
