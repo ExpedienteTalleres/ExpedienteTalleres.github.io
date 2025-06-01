@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     yearSelect.addEventListener('change', function() {
         const selectedYear = yearSelect.value;
-        // Mantén el primer option para el estilo original
         tournamentSelect.innerHTML = '<option value="">Selecciona un torneo</option>';
         warningMessage.style.display = 'none';
 
