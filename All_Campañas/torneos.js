@@ -13,5 +13,5 @@ const TORNEOS = {
     "1949": ["Torneo Oficial.html"],
     "1950": ["Torneo Preparación.html"],
     "1951": ["Torneo Preparación.html"],
-    "1953": ["Torneo Oficia.html"],
+    "1953": ["Torneo Oficial.html"],
 };
