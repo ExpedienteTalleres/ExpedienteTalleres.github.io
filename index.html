@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Expediente Talleres</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./Recursos/escudo.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="box">
+        <img src="./Recursos/escudo.png" alt="Escudo de Talleres" class="escudo">
+    </div>
+    <nav class="nav">
+        <div class="nav__ul-container">
+            <ul class="nav__ul">
+                <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+                <li class="nav__item"><a href="All_Campañas/campañas.html" class="nav__link">Campañas</a></li>
+                <li class="nav__item"><a href="./All_historiales/historial.html" class="nav__link">Historiales</a></li>
+                <li class="nav__item"><a href="./Album/Album.html" class="nav__link">Álbum</a></li>
+                <li class="nav__item"><a href="./All_presidentes/presidentes.html" class="nav__link">Presidentes</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Recaudaciones</a></li>
+                <li class="nav__item"><a href="./Idolos/idolos.html" class="nav__link">Idolos</a></li>
+                <li class="nav__item"><a href="./Archivo/archivo.html" class="nav__link">Archivo</a></li>
+                <li class="nav__item"><a href="./Caravanas/caravanas.html" class="nav__link">Caravanas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="juntos"></div>
+    <h2 class="destacado">Años destacados</h2>
+    <div class="flexbox">
+        <div class="flex-item">
+            <a href="./1913/fundacion.html">
+                <img src="Recursos/destacados/1913.png" alt="1913" class="img_destacado" link="campañas.html">
+            </a>
+        </div>
+        <div class="flex-item">
+            <a href="./1973/amadeo.html">
+                <img src="Recursos/destacados/1973.png" alt="1973" class="img_destacado">
+            </a>
+        </div>
+        <div class="flex-item">
+            <a href="./1999/conmebol.html">
+                <img src="Recursos/destacados/1999.png" alt="1999" class="img_destacado">
+            </a>
+        </div>
+        <div class="flex-item">
+            <a href="./2024/2024.html">
+                <img src="Recursos/destacados/2024.png" alt="2024" class="img_destacado">
+            </a>
+        </div>
+    </div>
+    <div class="all-escudos">
+        <h2 class="historial_escudos">Todos los escudos</h2>
+        <img class="escudos" src="Recursos/all_escudos.png">
+    </div>
+    <div class="container">
+        <header class="header">
+            <h2 class="destacado">Frases que definen nuestra historia y pasión</h2>
+        </header>
+
+        <div class="quotes-container">
+            <div class="quote-card">
+                <div class="quote-text">Juntos lo haremos todo, separados, nada.</div>
+                <div class="quote-author">Amadeo Nuccetelli</div>
+            </div>
+
+            <div class="quote-card">
+                <div class="quote-text">Grande por su historia, gigante por su gente.</div>
+                <div class="quote-author">Gabriel Incardona</div>
+            </div>
+
+            <div class="quote-card">
+                <div class="quote-text">Este club tiene algo que no se explica, una vez que aprendés a sentirlo, no te querés ir jamás.</div>
+                <div class="quote-author">Daniel Valencia</div>
+            </div>
+            <div class="quote-card">
+                <div class="quote-text">Ellos tienen campeones del mundo y sacarles la gloria fue increíble.</div>
+                <div class="quote-author">Guido Gabriel Herrera</div>
+            </div>
+        </div>
+        <div class="interactive-section">
+            <button class="btn-generate" onclick="generateRandomQuote()">
+                Generar frase de la hinchada
+            </button>
+            <div class="random-quote" id="randomQuote">
+                Haz clic en el botón para ver una frase de la hinchada
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 Expediente Talleres. Este sitio no es oficial ni está afiliado con el Club Atletico Talleres.</p>
+        <p>Las imágenes y contenidos relacionados con el club son propiedad de sus respectivos dueños.</p>
+        <p>Fotografías de Gabriel Incardona utilizadas con fines ilustrativos. Todos los derechos pertenecen a sus autores.</p>
+        <p>Para reclamos o contacto: <a class="links" href="mailto:tuemail@ejemplo.com">expedientetalleres@gmail.com</a></p>
+
+        <div style="margin-top: 1rem;">
+            <strong>Redes sociales del sitio:</strong><br>
+            <a class="links" href="https://www.instagram.com/expedientecat/" target="_blank">Instagram</a> |
+            <a class="links" href="https://x.com/ExpedienteCat" target="_blank">Twitter/X</a>
+        </div>
+
+        <div style="margin-top: 1rem;">
+            <strong>Gabriel Incardona:</strong><br>
+            <a class="links" href="https://www.instagram.com/gabiincardona17/" target="_blank">Instagram</a> |
+            <a class="links" href="https://x.com/GabiIncardona17" target="_blank">Twitter/X</a> |
+            <a class="links" href="https://www.youtube.com/@grandeporsuhistoria">Youtube</a> |
+            <a class="links" href="https://www.facebook.com/gabiincardona17/" target="_blank">Facebook</a>
+        </div>
+    </footer>
+
+    <script src="inicio.js"></script>
+</body>
+</html>
