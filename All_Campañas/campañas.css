@@ -144,22 +144,11 @@ footer {
 }
 
 .cuadro {
-    background: rgba(4, 22, 43, 0.75); 
+    background-color: linear-gradient(#04162B, #04182e);
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 300px;
-    margin: 40px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.cuadro-center {
-    min-height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .form-group {
@@ -207,8 +196,4 @@ label {
 }
 #searchButton:hover {
     background-color: #45a049;
-}
-
-.hidden {
-    display: none;
 }
