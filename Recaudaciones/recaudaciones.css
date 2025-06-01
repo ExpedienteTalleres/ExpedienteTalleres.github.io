@@ -1,0 +1,384 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #333333;
+    background-color:#f4f4f4;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #04162B;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0f2f54;
+    border-radius: 10px;
+    border: 3px solid #04162B; 
+}
+
+.box {
+    min-width: 100%;
+    min-height: 120px;
+    background-color: #04162B;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    border: none;
+    position: sticky;
+}
+
+.escudo {
+    min-height: 75px;
+    max-height: 75px;
+    margin: 20px 80px 20px -35px;
+    display: flex;
+    position: relative;
+    left: 50%;
+}
+
+.nav {
+    background-color: #04162B;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 6px 20px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px #000;
+    z-index: 1000;
+}
+
+.nav__ul {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav__item {
+    list-style: none;
+}
+
+.nav__ul-container {
+    flex-grow: 4;
+    text-align: center;
+}
+
+.nav__link {
+    color: #eee;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px;
+    margin: 6px;
+    border-radius: 0;
+    transition: background-color 0.24s, border-radius 0.24s, outline 0.24s, outline-offset 0.24s;
+    margin: 2px;
+    outline: 0;
+    outline-offset: 0;
+}
+
+.link--login {
+    background-color: #04162B;
+    border-radius: 20px;
+    color: #eee;
+    padding: 8px 24px;
+    margin-left: 6px;
+}
+
+.link--login:hover {
+    background-color: #647c9e;
+    outline: none;
+}
+
+.nav__link:hover {
+    background-color: #0f2f54;
+    border-radius: 20px;
+}
+
+footer {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: #04162B;
+    padding: 1rem;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+.links {
+    color: #0f2f54;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #04162B;
+    margin-bottom: 1rem;
+}
+.header p {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+.clubs-legend {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+.club-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.club-color {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 2px;
+}
+.talleres-color { background-color: #04162B; }
+.belgrano-color { background-color: #0ea5e9; }
+.instituto-color { background-color: #dc2626; }
+.legend {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.legend-color {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 2px;
+}
+.highest-color { background-color: #eab308; }
+.lowest-color { background-color: #dc2626; }
+.decade-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(4, 22, 43, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+.decade-card:hover {
+    box-shadow: 0 8px 25px rgba(4, 22, 43, 0.15);
+}
+.decade-header {
+    background: #04162B;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+.decade-header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.decade-content {
+    padding: 2rem;
+}
+.clubs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+.club-card {
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 2px solid;
+    position: relative;
+}
+.club-card.talleres {
+    background: rgba(4, 22, 43, 0.05);
+    border-color: rgba(4, 22, 43, 0.2);
+}
+.club-card.belgrano {
+    background: rgba(14, 165, 233, 0.05);
+    border-color: rgba(14, 165, 233, 0.2);
+}
+.club-card.instituto {
+    background: rgba(220, 38, 38, 0.05);
+    border-color: rgba(220, 38, 38, 0.2);
+}
+.club-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.club-card.talleres .club-name { color: #04162B; }
+.club-card.belgrano .club-name { color: #0ea5e9; }
+.club-card.instituto .club-name { color: #dc2626; }
+.club-amount {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #374151;
+}
+.club-amount.highest {
+    color: #eab308;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.club-amount.lowest {
+    color: #dc2626;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    margin-top: 0.5rem;
+}
+.badge.highest {
+    background-color: #eab308;
+}
+.badge.lowest {
+    background-color: #dc2626;
+}
+.total-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(4, 22, 43, 0.15);
+    border: 3px solid #04162B;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+.total-header {
+    background: #04162B;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+.total-header h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.total-header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+.total-content {
+    padding: 3rem 2rem;
+}
+.total-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.total-club-card {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 3px solid;
+}
+.total-club-card.talleres {
+    background: rgba(4, 22, 43, 0.05);
+    border-color: rgba(4, 22, 43, 0.3);
+}
+.total-club-card.belgrano {
+    background: rgba(14, 165, 233, 0.05);
+    border-color: rgba(14, 165, 233, 0.3);
+}
+.total-club-card.instituto {
+    background: rgba(220, 38, 38, 0.05);
+    border-color: rgba(220, 38, 38, 0.3);
+}
+.total-club-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.total-amount {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #374151;
+}
+.total-amount.highest {
+    color: #eab308;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.total-amount.lowest {
+    color: #dc2626;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.total-badge {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #04162B;
+    margin-top: 1rem;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    .header h1 {
+        font-size: 2rem;
+    }
+    .header p {
+        font-size: 1rem;
+    }
+    .clubs-legend {
+        gap: 1rem;
+    }
+    .legend {
+        gap: 1rem;
+    }
+    .decade-content {
+        padding: 1rem;
+    }
+    .clubs-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .total-content {
+        padding: 2rem 1rem;
+    }
+    .total-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
