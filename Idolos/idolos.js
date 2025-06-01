@@ -40,7 +40,7 @@ const menuHamburguesa = document.querySelector('.menu_hamburguesa');
             description:
                 "Fue miembro de la emblematíca familia que más partidos jugó en Talleres; arrancó en 1914 y se retiró en 1926. Las hizo todas.",
             fullDescription:
-                "Agrega más wachin.",
+                "asd.",
             },
         ]
 
