@@ -4,40 +4,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const searchButton = document.getElementById('searchButton');
     const warningMessage = document.getElementById('warningMessage');
 
+    Object.keys(TORNEOS).forEach(year => {
+        const option = document.createElement('option');
+        option.value = year;
+        option.textContent = year;
+        yearSelect.appendChild(option);
+    });
+
     yearSelect.addEventListener('change', function() {
         const selectedYear = yearSelect.value;
         tournamentSelect.innerHTML = '';
 
-        if (selectedYear) {
-            fetch(`./${selectedYear}/`)
-                .then(response => response.text())
-                .then(data => {
-                    const parser = new DOMParser();
-                    const doc = parser.parseFromString(data, 'text/html');
-                    const links = doc.querySelectorAll('a');
-                    links.forEach(link => {
-                        const href = link.getAttribute('href');
-                        if (href.endsWith('.html')) {
-                            const fileName = decodeURIComponent(href.split('/').pop()); 
-                            const option = document.createElement('option');
-                            option.value = fileName;
-                            option.textContent = fileName.replace('.html', '');
-                            tournamentSelect.appendChild(option);
-                        }
-                    });
-                })
-                .catch(error => console.error('Error fetching tournaments:', error));
+        if (selectedYear && TORNEOS[selectedYear]) {
+            TORNEOS[selectedYear].forEach(fileName => {
+                const option = document.createElement('option');
+                option.value = fileName;
+                option.textContent = fileName.replace('.html', '');
+                tournamentSelect.appendChild(option);
+            });
         }
     });
-
-    for (let year = 1934; year <= 2025; year++) {
-        if (year !== 1935 && year !== 1936 && year !==1947) { 
-            const option = document.createElement('option');
-            option.value = year;
-            option.textContent = year;
-            yearSelect.appendChild(option);
-        }
-    }
 
     searchButton.addEventListener('click', function() {
         const selectedYear = yearSelect.value;

@@ -1,0 +1,17 @@
+const TORNEOS = {
+    "1934": ["Torneo Oficial.html"],
+    "1937": ["Torneo Preparación.html"],
+    "1938": ["Torneo Oficial.html", "Torneo Preparación.html"],
+    "1939": ["Torneo Oficial.html"],
+    "1940": ["Torneo Preparación.html"],
+    "1941": ["Torneo Oficial.html"],
+    "1942": ["Torneo Preparación.html"],
+    "1944": ["Torneo Oficial.html", "Torneo Preparación.html"],
+    "1945": ["Torneo Oficial.html"],
+    "1946": ["Torneo Preparación.html"],
+    "1948": ["Torneo Oficial.html"],
+    "1949": ["Torneo Oficial.html"],
+    "1950": ["Torneo Preparación.html"],
+    "1951": ["Torneo Preparación.html"],
+    "1953": ["Torneo Oficia.html"],
+};
