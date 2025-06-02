@@ -14,9 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         1913: 4,
         1914: 1,
         1915: 4,
-        1916: 1,
         1917: 2,
-        1918: 1,
         1920: 1,
         1922: 1,
         1924: 2,
@@ -43,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
         1964: 5,
         1966: 3,
         1967: 3,
-        1969: 9,
+        1969: 10,
         1970: 3,
         1971: 2,
         1972: 2,
@@ -51,6 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
         1974: 22,
         1975: 12,
         1976: 7,
+        1978: 1,
+        1998: 1,
         2024: 2, 
         2023: 3, 
     };
@@ -173,6 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "fotos/1969/foto7.jpg": "La tradicional popular pirata pintada de azul y blanco. Talleres festeja el Oficial después de ganarle a Instituto en la cancha de Belgrano.",
         "fotos/1969/foto8.jpg": "Los once que le ganaron a Chaco For Ever la final del Regional. Arriba: Fonseca, Del Rio, Charras, Massetani, Cortéz, y Deluca. Abajo: Frullinghi, Márquez, Millicay, Armenante y Rivarola. Usaron la remera con rayas horizontales solos unos minutos y la tuvieron que cambiar porque se confundia con la de los rivales.",
         "fotos/1969/foto9.jpg": "Martín Fonseca corta el avance de Oscar Más, atrás llegan Carlos Griguol y Jorge Guyón. Fue por la sexta fecha del Nacional 69 cuando Talleres y River empataron 2 a 2 en la Boutique.",
+        "fotos/1969/foto10.jpg": "Luis 'el Cabezón' Galván sumamente joven, en la celebración de la clasificación al Nacional '70 con varios integrantes del plantel de la época: Alberto de Sá, Miguel Ponce, 'ñoño' Peralta, el Profesor Hugo Ivancich y el masajista Gabino Martínez.",
 
 
         "fotos/1970/foto1.jpg": "El marco de las tribunas habla del fervor con que Talleres fue apoyado por su gente en 1970, y por aquellos que encontraron en la camiseta azul y blanca un motivo para asistir al fútbol cordobés frente a los equipos ya consagrados.",
@@ -231,6 +232,9 @@ document.addEventListener("DOMContentLoaded", () => {
         "fotos/1976/foto6.jpg": "Newells 0-2 Talleres. En las recaudaciones de 1976, Talleres pelea el primer lugar junto a River y a Boca. Nunca un equipo del interior había logrado semejante hazaña. Para todos ya es un brillante negocio jugar con los albiazules.",
         "fotos/1976/foto7.jpg": "Fuerza, goles, amor y contundencia puesta de manifiesto en las estadisticas. Talleres estuvo muy cerca de la meta prefijada. Mejor dicha, cada día está a menos distancia del titulo nacional.",
         
+        "fotos/1978/foto1.jpg": "Partido contra Huracán de Parque Patricios en el año 1978. Se puede ver a la 'Pepona' Reinaldi, al 'Hacha' Ludueña y a Ricardo Cherini en acción.",
+
+        "fotos/1998/foto1.jpg": "En la 'Cena de campeones'.",
 
         "fotos/2024/foto1.jpg": "Esta es la descripción de la foto 1 del año 2024.",
         "fotos/2024/foto2.jpg": "Esta es la descripción de la foto 2 del año 2024.",
