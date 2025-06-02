@@ -7,9 +7,27 @@ const menuHamburguesa = document.querySelector('.menu_hamburguesa');
 
         const idols = [
             {
+            name: "Horacio Salvatelli",
+            birthDate: "Desconocido",
+            image: "idolo/Salvatelli.jpg",
+            description:
+                "Fue miembro de la emblematíca familia que más partidos jugó en Talleres; arrancó en 1914 y se retiró en 1926. Las hizo todas.",
+            fullDescription:
+                "Este hombre fue el primer futbolista cordobés preso por una actuación en un partido de fútbol. Había repartido patadas a mansalva en un clásico contra Belgrano, después de fracturar al arquero José Cardozo a los 27 minutos del segundo tiempo, la policía intervino y se llevaron detenido a Salvatelli, estuvo dos días en el calabozo, despues los directivos de en ese entonces Central Córdoba pidieron a la Liga Cordobesa que interviniera para su liberación, ante la negativa decidieron abandonar a la LCF para cualquier gestión. El episodio provocó en que meses después los albiazules se inscribieran nuevamente con su actual nombre, Club Atlético Talleres.",
+            },
+            {
+            name: "Daniel Alberto Willington",
+            birthDate: "01-09-1942",
+            image: "idolo/Willington.jpg",
+            description:
+                "Conocido como 'El Loco', Willington es considerado uno de los mejores jugadores en la historia de Talleres. Su habilidad técnica y visión de juego lo hicieron inolvidable.",
+            fullDescription:
+                "Daniel Alberto Willington, nacido el 1 de septiembre de 1942, es una leyenda indiscutible del Club Atlético Talleres y del fútbol argentino en general. Apodado 'El Loco' por su impredecible y genial estilo de juego, Willington es ampliamente considerado como uno de los mejores jugadores en la historia del club. Su extraordinaria habilidad técnica, combinada con una visión de juego excepcional, lo convirtieron en un mediocampista ofensivo de elite. Willington no solo era capaz de crear oportunidades de gol con pases precisos, sino que también poseía un notable instinto goleador. Su capacidad para controlar el ritmo del juego y su creatividad en el campo lo hicieron un jugador inolvidable para la afición de Talleres. A lo largo de su carrera, Willington demostró una lealtad inquebrantable al club, rechazando ofertas de equipos más grandes para continuar siendo el ídolo de la T. Su legado trasciende las estadísticas, ya que inspiró a generaciones de jugadores y dejó recuerdos imborrables en todos los que tuvieron el privilegio de verlo jugar.",
+            },
+            {
             name: "José Omar Reinaldi",
             birthDate: "27-05-1949",
-            image: "https://upload.wikimedia.org/wikipedia/commons/2/2d/ReinaldiTalleres.jpg",
+            image: "idolo/Reinaldi.jpg",
             description:
                 "Conocido como 'El Tata', Reinaldi es uno de los máximos goleadores en la historia de Talleres. Su habilidad para definir y su lealtad al club lo convirtieron en un ídolo indiscutido.",
             fullDescription:
@@ -23,24 +41,6 @@ const menuHamburguesa = document.querySelector('.menu_hamburguesa');
                 "Oviedo es considerado uno de los mejores defensores en la historia de Talleres. Su liderazgo y entrega en el campo lo convirtieron en un referente para el club.",
             fullDescription:
                 "Miguel Ángel Oviedo, nacido el 12 de octubre de 1950, es una figura emblemática en la historia del Club Atlético Talleres. Reconocido como uno de los mejores defensores que ha vestido la camiseta albiazul, Oviedo se destacó por su extraordinaria capacidad defensiva, su visión táctica y su inquebrantable espíritu de lucha. Su liderazgo natural tanto dentro como fuera del campo lo convirtió en un verdadero capitán y referente para sus compañeros y para la afición. Oviedo no solo era un defensor sólido, sino también un jugador que entendía el juego de una manera única, contribuyendo significativamente a la organización del equipo. Su entrega incondicional en cada partido y su identificación con los colores del club lo elevaron al estatus de ídolo. La carrera de Oviedo en Talleres dejó un legado duradero, estableciendo un estándar de excelencia y compromiso para las futuras generaciones de defensores del club.",
-            },
-            {
-            name: "Daniel Alberto Willington",
-            birthDate: "01-09-1942",
-            image: "https://www.clubtalleres.com.ar/wp-content/uploads/2022/09/willington2.jpg",
-            description:
-                "Conocido como 'El Loco', Willington es considerado uno de los mejores jugadores en la historia de Talleres. Su habilidad técnica y visión de juego lo hicieron inolvidable.",
-            fullDescription:
-                "Daniel Alberto Willington, nacido el 1 de septiembre de 1942, es una leyenda indiscutible del Club Atlético Talleres y del fútbol argentino en general. Apodado 'El Loco' por su impredecible y genial estilo de juego, Willington es ampliamente considerado como uno de los mejores jugadores en la historia del club. Su extraordinaria habilidad técnica, combinada con una visión de juego excepcional, lo convirtieron en un mediocampista ofensivo de elite. Willington no solo era capaz de crear oportunidades de gol con pases precisos, sino que también poseía un notable instinto goleador. Su capacidad para controlar el ritmo del juego y su creatividad en el campo lo hicieron un jugador inolvidable para la afición de Talleres. A lo largo de su carrera, Willington demostró una lealtad inquebrantable al club, rechazando ofertas de equipos más grandes para continuar siendo el ídolo de la T. Su legado trasciende las estadísticas, ya que inspiró a generaciones de jugadores y dejó recuerdos imborrables en todos los que tuvieron el privilegio de verlo jugar.",
-            },
-            {
-            name: "Horacio Salvatelli",
-            birthDate: "Desconocido",
-            image: "idolo/Salvatelli.jpg",
-            description:
-                "Fue miembro de la emblematíca familia que más partidos jugó en Talleres; arrancó en 1914 y se retiró en 1926. Las hizo todas.",
-            fullDescription:
-                "Agrega más wachin.",
             },
         ]
 
@@ -92,26 +92,30 @@ const menuHamburguesa = document.querySelector('.menu_hamburguesa');
         })
 
         function showModal(idol) {
-            const modal = document.getElementById("modal")
-            const modalInfo = document.getElementById("modal-info")
+            const modal = document.getElementById("modal");
+            const modalInfo = document.getElementById("modal-info");
             modalInfo.innerHTML = `
                 <h2>${idol.name}</h2>
                 <p><strong>Fecha de nacimiento:</strong> ${idol.birthDate}</p>
-                <img src="${idol.image}" alt="${idol.name}" style="max-width: 100%; margin: 10px 0;">
+                <img src="${idol.image}" alt="${idol.name}">
                 <p>${idol.fullDescription}</p>
-            `
-            modal.style.display = "block"
+            `;
+            modal.style.display = "flex";
+            document.body.classList.add('modal-open');
         }
 
         document.querySelector(".close").addEventListener("click", () => {
-            document.getElementById("modal").style.display = "none"
-        })
+            document.getElementById("modal").style.display = "none";
+            document.body.classList.remove('modal-open');
+        });
 
         window.addEventListener("click", (event) => {
-            if (event.target === document.getElementById("modal")) {
-            document.getElementById("modal").style.display = "none"
+            const modal = document.getElementById("modal");
+            if (event.target === modal) {
+                modal.style.display = "none";
+                document.body.classList.remove('modal-open');
             }
-        })
+        });
 
         displayIdols(idols)
 
