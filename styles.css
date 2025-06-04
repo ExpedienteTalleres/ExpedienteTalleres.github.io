@@ -383,6 +383,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        overflow-x: hidden;
+    }
     .nav {
         display: block;
         width: 100%;
@@ -414,6 +418,7 @@ footer {
         margin: 20px auto 0 auto;
         left: 0;
         right: 0;
+        padding-right: 2%;
         position: relative;
         display: block;
         transform: translateX(0);
@@ -486,7 +491,7 @@ footer {
     }
 
     .escudos {
-        max-width: 90vw;
+        max-width: 100%;
     }
 
     .container {
@@ -514,6 +519,9 @@ footer {
     }
 
     footer {
+        width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden; ;
         font-size: 0.9rem;
         padding: 1rem 0.5rem;
     }
