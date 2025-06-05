@@ -6,16 +6,13 @@
     <title>Caravanas - Expediente Talleres</title>
     <link rel="stylesheet" href="caravanas.css">
     <link rel="icon" href="../Recursos/escudo.png" type="image/png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 <body>
     <div class="box">
         <img src="../Recursos/escudo.png" alt="Escudo de Talleres" class="escudo">
         <button class="menu_hamburguesa" aria-label="Abrir menú">
-            <span class="hamburguesa_linea"></span>
-            <span class="hamburguesa_linea"></span>
-            <span class="hamburguesa_linea"></span>
+            <span class="material-symbols-outlined">menu</span>
         </button>
     </div>
     <nav class="nav">
@@ -29,7 +26,10 @@
                 <li class="nav__item"><a href="../Recaudaciones/recaudaciones.html" class="nav__link">Recaudaciones</a></li>
                 <li class="nav__item"><a href="../Idolos/idolos.html" class="nav__link">Idolos</a></li>
                 <li class="nav__item"><a href="../Archivo/archivo.html" class="nav__link">Archivo</a></li>
-                <li class="nav_item"><a href="" class="nav__link">Caravanas</a></li>
+                <li class="nav_item"><a href="./caravanas.html" class="nav__link">Caravanas</a></li>
+                <button class="close-menu" aria-label="Cerrar menú">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
             </ul>
         </div>
     </nav>
@@ -38,7 +38,6 @@
         <h2>Las mayores movilizaciones en la historia del club</h2>
     </header>
     
-
     <div class="carousel-container">
     <div class="carousel" id="carousel">
         <div class="card">

@@ -2,14 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presidentes - Expediente Talleres</title>
     <link rel="stylesheet" href="presidentes.css">
     <link rel="icon" href="../Recursos/escudo.png" type="image/png">
-    <meta name="viewport" content="width-device-width,initial-scale-1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 <body>
     <div class="box">
+        <button class="menu_hamburguesa" aria-label="Abrir menú">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
         <img src="../Recursos/escudo.png" alt="Escudo de Talleres" class="escudo">
     </div>
     <nav class="nav">
@@ -24,12 +27,16 @@
                 <li class="nav__item"><a href="../Idolos/idolos.html" class="nav__link">Idolos</a></li>
                 <li class="nav__item"><a href="../Archivo/archivo.html" class="nav__link">Archivo</a></li>
                 <li class="nav__item"><a href="../Caravanas/caravanas.html" class="nav__link">Caravanas</a></li>
+                <button class="close-menu" aria-label="Cerrar menú">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
             </ul>
         </div>
     </nav>
     <div class="container">
         <h1 class="title">Presidentes de Talleres</h1>
         
+        <p class="info-mobile"> Desliza para ver todos los presidentes de la historia.</p>
         <div class="carousel-container">
             <button id="prevBtn" class="carousel-button prev">&lt;</button>
             <div class="carousel" id="carousel">

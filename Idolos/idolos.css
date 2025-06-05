@@ -118,64 +118,17 @@ body {
     border-radius: 20px;
 }
 
-.menu_hamburguesa {
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 25px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-}
-
-.hamburguesa_linea {
-    width: 100%;
-    height: 3px;
-    background-color: #eee;
-    border-radius: 10px;
-}
-
 @media (max-width: 768px) {
-    .menu_hamburguesa {
-        display: flex;
-    }
-
     .nav {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
+        display: block;
         width: 100%;
-        height: 100vh;
-        background-color: #04162B;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 999;
+        background: transparent;
+        box-shadow: none;
+        position: static;
+        padding: 0;
+        margin: 0;
     }
 
-    .nav--active {
-        display: flex;
-    }
-
-    .nav__ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav__item {
-        margin: 15px 0;
-    }
-
-    .nav__link {
-        font-size: 24px;
-    }
 }
 
 :root {
@@ -352,8 +305,6 @@ footer {
     border-radius: 8px;
     border: 2px solid #e0e0e0;
 }
-
-/* Firefox */
 .modal-content {
     scrollbar-width: thin;
     scrollbar-color: #0f2f54 #e0e0e0;
@@ -386,3 +337,136 @@ body.modal-open {
 }
 
 
+
+
+.menu_hamburguesa {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 24px;
+    margin-top: 40px;
+    z-index: 1000;
+    position: relative;
+}
+.close-menu {
+    display: none;
+    position: absolute;
+    top: 32px;
+    right: 24px;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    z-index: 1002;
+    cursor: pointer;
+}
+.close-menu.show {
+    display: block;
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        overflow-x: hidden;
+    }
+    .box {
+        flex-direction: row;
+        align-items: flex-start;
+        min-height: 100px;
+        justify-content: center;
+        position: relative;
+    }
+
+    .menu_hamburguesa {
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 32px;
+        margin-left: 0;
+        margin-top: 0;
+        z-index: 1001;
+    }
+
+    .escudo {
+        margin: 20px auto 0 auto;
+        padding-bottom: 3%;
+        left: 0;
+        right: 0;
+        padding-right: 2%;
+        position: relative;
+        display: block;
+        transform: translateX(0);
+    }
+
+    .nav__ul {
+        display: block;
+        flex-direction: column;
+        background-color: #04162B;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 70%;
+        padding-top: 60px; 
+        box-shadow: 4px 0 10px rgba(0,0,0,0.5);
+        z-index: 999;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateX(-100%);
+        transition: opacity 0.3s ease, transform 0.3s cubic-bezier(.4,1,.7,1);
+        align-items: center;
+        padding-top: 20%;
+    }
+    .nav__ul.active {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateX(0);
+    }
+
+    .menu_hamburguesa.hide {
+        display: none !important;
+    }
+
+    .close-menu {
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        display: none;
+    }
+    .close-menu.show {
+        display: block;
+    }
+    .box {
+        flex-direction: row;
+        align-items: flex-start;
+        min-height: 100px;
+    }
+    .escudo {
+        margin: 20px 0 0 20px;
+        left: 0;
+    }
+    footer {
+        width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden; ;
+        font-size: 0.9rem;
+        padding: 1rem 0.5rem;
+    }
+    footer p {
+        margin: 6px 0;
+    }
+    
+    .menu_hamburguesa,
+    .close-menu {
+        background: transparent !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+}
+.material-symbols-outlined {
+    color: white;
+}

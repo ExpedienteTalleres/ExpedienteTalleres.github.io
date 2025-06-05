@@ -50,7 +50,6 @@ function showBooks(category) {
                 <p>${book.author}</p>
             </div>
         `;
-        // Redirigir al hacer clic
         bookElement.addEventListener("click", () => {
             window.location.href = book.url;
         });
@@ -81,21 +80,12 @@ function toggleMobileMenu() {
         alert(`No se encontró una URL para la sección: ${sectionName}`);
     }
 }
-
-
-        // Explore section function
         function exploreSection(sectionName) {
             alert(`Explorando: ${sectionName}`);
-            // En una aplicación real, aquí abrirías contenido específico
         }
-
-        // Show history function
         function showHistory() {
             alert('Navegando a la sección de Historia del Club');
-            // En una aplicación real, aquí navegarías a la página de historia
         }
-
-        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -106,15 +96,11 @@ function toggleMobileMenu() {
                         block: 'start'
                     });
                 }
-                
-                // Close mobile menu if open
                 if (window.innerWidth <= 768) {
                     document.getElementById('mobileNav').style.display = 'none';
                 }
             });
         });
-
-        // Close mobile menu when clicking outside
         document.addEventListener('click', function(event) {
             const mobileNav = document.getElementById('mobileNav');
             const mobileToggle = document.querySelector('.mobile-menu-toggle');
@@ -123,16 +109,12 @@ function toggleMobileMenu() {
                 mobileNav.style.display = 'none';
             }
         });
-
-        // Handle window resize
         window.addEventListener('resize', function() {
             const mobileNav = document.getElementById('mobileNav');
             if (window.innerWidth > 768) {
                 mobileNav.style.display = 'none';
             }
         });
-
-        // Add loading animation
         window.addEventListener('load', function() {
             document.body.style.opacity = '0';
             document.body.style.transition = 'opacity 0.5s';
@@ -140,8 +122,6 @@ function toggleMobileMenu() {
                 document.body.style.opacity = '1';
             }, 100);
         });
-
-        // Add scroll effect to hero logo
         window.addEventListener('scroll', function() {
             const heroLogo = document.querySelector('.hero-logo');
             const scrolled = window.pageYOffset;
