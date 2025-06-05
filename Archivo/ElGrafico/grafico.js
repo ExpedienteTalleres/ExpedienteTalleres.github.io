@@ -58,25 +58,16 @@ function showBooks(category) {
     });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.explore-btn[data-url]').forEach(btn => {
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            const url = btn.getAttribute('data-url');
-            if (url) window.location.href = url;
-        });
-    });
-});
-
 function toggleMobileMenu() {
             const mobileNav = document.getElementById('mobileNav');
             const isVisible = mobileNav.style.display === 'flex';
             mobileNav.style.display = isVisible ? 'none' : 'flex';
         }
+
         function navigateToSection(sectionName) {
     const urls = {
-        "Libros de Talleres": "./Libros/libros.html",
-        "El Gráfico": "./ElGrafico/grafico.html",
+        "Libro Centenario": "./centenario/centenario.html",
+        "El Gráfico": "./Grafico/grafico.html",
         "Audios": "./Audios/audios.html",
         "Los Principios": "./Principios/principios.html",
         "La Voz del Interior": "./Lavoz/lavoz.html"
@@ -92,11 +83,9 @@ function toggleMobileMenu() {
         function exploreSection(sectionName) {
             alert(`Explorando: ${sectionName}`);
         }
-
         function showHistory() {
             alert('Navegando a la sección de Historia del Club');
         }
-
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -107,7 +96,6 @@ function toggleMobileMenu() {
                         block: 'start'
                     });
                 }
-                
                 if (window.innerWidth <= 768) {
                     document.getElementById('mobileNav').style.display = 'none';
                 }
@@ -144,4 +132,12 @@ function toggleMobileMenu() {
             }
         });
 
-        
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.explore-btn[data-url]').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const url = btn.getAttribute('data-url');
+            if (url) window.location.href = url;
+        });
+    });
+});
