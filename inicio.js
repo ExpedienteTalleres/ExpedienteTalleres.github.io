@@ -9,7 +9,11 @@ const additionalQuotes = [
     { text: "La pesadilla de los giles" },
     { text: "Desde siempre y para siempre, con vos estaré " },
     { text: "Solo entiende mi locura quien comparte mi pasión" },
-    { text: "Historia, pasión y pueblo" }
+    { text: "Historia, pasión y pueblo" },
+    { text: "Con Talleres hasta el amanecer" },
+    { text: "El corazón tiene razones que la propia razón nunca entenderá" },
+    { text: "Que juegue Talleres, que cante la mona, todo el año es carnaval" },
+    { text: "Con Talleres hasta el amanecer" },
 ];
 
 function animateCard(card) {
