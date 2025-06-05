@@ -214,6 +214,10 @@ p {
     display: block;
 }
 @media (max-width: 768px) {
+    .historia {
+        margin: 10px 20px 0px 20px;
+        font-size: 14px;
+    }
     .header {
         overflow-y: none;
         height: auto;
