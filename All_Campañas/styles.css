@@ -117,13 +117,14 @@ body {
     --dark-gray: #333333;
 }
 .hero {
-    min-height: 60vh;
+    min-height: auto;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: hidden;
-    padding: 100px 5% 60px;
+    overflow: visible;
+    padding: 60px 5%;
 }
 .hero::before {
     background-color: #f5f5f5;
@@ -133,11 +134,13 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: -1;
 }
 .hero-content {
     text-align: center;
     z-index: 2;
     max-width: 900px;
+    position: relative;
 }
 .tournament-badge {
     display: inline-block;
@@ -210,6 +213,8 @@ body {
 }
 .matches-section {
     background: #04162B;
+    position: relative;
+    z-index: 1;
 }
 .matches-container {
     max-width: 900px;
@@ -356,6 +361,8 @@ body {
 }
 .standings-section {
     background: #04162B;
+    position: relative;
+    z-index: 1;
 }
 .standings-table-container {
     max-width: 1000px;
@@ -432,6 +439,7 @@ body {
 }
 .squad-section {
     position: relative;
+    z-index: 1;
 }
 .squad-section::before {
     content: '';
@@ -441,6 +449,7 @@ body {
     right: 0;
     bottom: 0;
     background-size: 80px 80px;
+    z-index: -1;
 }
 .squad-container {
     max-width: 1000px;
@@ -536,43 +545,42 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
-/* Responsive */
+
 @media (max-width: 768px) {
-        .nav-links {
-            display: none;
-        }
-        .formations {
-            grid-template-columns: 1fr;
-            gap: 1.5rem;
-        }
-        .match-header {
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-        .match-date {
-            width: 100%;
-            order: -1;
-        }
-        .standings-table th,
-        .standings-table td {
-            padding: 0.75rem 0.4rem;
-            font-size: 0.75rem;
-        
-        .standings-table th:first-child,
-        .standings-table th:nth-child(2),
-        .standings-table td:first-child,
-        .standings-table td:nth-child(2) {
-            padding-left: 0.75rem;
-        }
-        .squad-grid {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }  
+    .nav-links {
+        display: none;
+    }
+    .formations {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .match-header {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    .match-date {
+        width: 100%;
+        order: -1;
+    }
+    .standings-table th,
+    .standings-table td {
+        padding: 0.75rem 0.4rem;
+        font-size: 0.75rem;
+    }
+    .standings-table th:first-child,
+    .standings-table th:nth-child(2),
+    .standings-table td:first-child,
+    .standings-table td:nth-child(2) {
+        padding-left: 0.75rem;
+    }
+    .squad-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
 .menu_hamburguesa {
-    display: none;
+    display: none !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -581,13 +589,12 @@ footer {
     background: transparent;
     border: none;
     cursor: pointer;
-    margin-left: 24px;
-    margin-top: 40px;
     z-index: 1000;
     position: relative;
 }
+
 .close-menu {
-    display: none;
+    display: none !important;
     position: absolute;
     top: 32px;
     right: 24px;
@@ -597,9 +604,11 @@ footer {
     z-index: 1002;
     cursor: pointer;
 }
+
 .close-menu.show {
-    display: block;
+    display: block !important;
 }
+
 @media (max-width: 768px) {
     .header{
         display: flex;
@@ -648,13 +657,17 @@ footer {
     }
 
     .menu_hamburguesa {
-        display: flex;
+        display: flex !important;
         position: absolute;
         left: 0;
         top: 32px;
         margin-left: 0;
         margin-top: 0;
         z-index: 1001;
+    }
+
+    .menu_hamburguesa.hide {
+        display: none !important;
     }
 
     .escudo {
@@ -691,10 +704,6 @@ footer {
         opacity: 1;
         pointer-events: auto;
         transform: translateX(0);
-    }
-
-    .menu_hamburguesa.hide {
-        display: none !important;
     }
 
     .close-menu {

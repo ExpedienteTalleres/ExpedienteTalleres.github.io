@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Torneo Oficial 1953 - Expediente Talleres</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" href="../../Recursos/escudo.png" type="image/png">
@@ -33,129 +34,108 @@
             </ul>
         </div>
     </nav>
-    <div class="container">
-        <h1>Torneo Oficial - Campeón </h1>
-        <img src="../../Album/fotos/1953/foto2.jpg" alt="Plantel completo que disputó el torneo" class="foto">
-        <section class="rueda">
-            <h2>Primera Rueda</h2>
-            <div class="partido" onclick="ToggleGoles(this)">
-                Talleres 2 - 2 Instituto
-                <div class="goles">
-                    <p>Goles de Talleres: Sosa, Gambino</p>
-                </div>
-            </div>
-            <div class="partido" onclick="ToggleGoles(this)">
-                Universitario 2 - 2 Talleres
-                <div class="goles">
-                    <p>Goles de Talleres: Sosa, Savino</p>
-                </div>
-            </div>
-            <div class="partido" onclick="ToggleGoles(this)">
-                Talleres 2 - 1 Sportivo Belgrano
-                <div class="goles">
-                    <p>Goles de Talleres: Cuello(2)</p>
-                </div>
-            </div>
-            <div class="partido" onclick="ToggleGoles(this)">
-                Belgrano 3 - 1 Talleres
-                <div class="goles">
-                    <p>Goles de Talleres: Savino </p>
-                </div>
-            </div>
-            <div class="partido">
-                Libre
-            </div>
-            <div class="partido" onclick="ToggleGoles(this)">
-                Talleres 4 - 0 Escuela Presidente Roca
-                <div class="goles">
-                    <p>Goles de Talleres: Ramayo, Cuello (2), Sosa </p>
-                </div>
-            </div>
-            <div class="partido" onclick="ToggleGoles(this)">
-                Peñarol 1 - 3 Talleres
-                <div class="goles">
-                    <p>Goles de Talleres: Cuello, Sosa, Gambino</p>
-                </div>
-            </div>
-            <div class="partido" onclick="ToggleGoles(this)">
-                Talleres 0 - 5 Juniors
-            </div>
-            <div class="partido" onclick="ToggleGoles(this)">
-                Racing 1 - 3 Talleres
-                <div class="goles">
-                    <p>Goles de Talleres: Sosa</p>
-                </div>
-            </div>
-        </section>
 
-        <section class="rueda">
-            <h2>Segunda Rueda</h2>
-            <div class="partido" onclick="ToggleGoles(this)">
-                Instituto 1 - 5 Talleres
-                <div class="goles">
-                    <p>Goles de Talleres: Sosa (2), A. López (2), Cuello</p>
-                </div>
-            </div>
-            <div class="partido" onclick="ToggleGoles(this)">
-                Talleres 1 - 1 Universitario
-                <div class="goles">
-                    <p>Goles de Talleres: Sosa</p>
-                </div>
-            </div>
-            <div class="partido" onclick="ToggleGoles(this)">
-                Sportivo Belgrano 1 - 1 Talleres
-                <div class="goles">
-                    <p>Goles de Talleres: Gambino</p>
-                </div>
-            </div>
-            <div class="partido" onclick="ToggleGoles(this)">
-                Talleres 2 - 1 Belgrano
-                <div class="goles">
-                    <p>Goles de Talleres: Cuello, Sosa</p>
-                </div>
-            </div>
-            <div class="partido">
-                Libre
-            </div>
-            <div class="partido" onclick="ToggleGoles(this)">
-                Escueala Presidente Roca 1 - 4 Talleres
-                <div class="goles">
-                    <p>Goles de Talleres: Sosa (3), Cuello</p>
-                </div>
-            </div>
-            <div class="partido" onclick="ToggleGoles(this)">
-                Talleres 4 - 2 Peñarol
-                <div class="goles">
-                    <p>Goles de Talleres: Cuello, Sosa (2), Blanco</p>
-                </div>
-            </div>
-            <div class="partido" onclick="ToggleGoles(this)">
-                Jugador 5 - 3 Talleres
-                <div class="goles">
-                    <p>Goles de Talleres: Cuello, Savino (2)</p>
-                </div>
-            </div>
-            <div class="partido" onclick="ToggleGoles(this)">
-                Talleres 2 - 1 Racing
-                <div class="goles">
-                    <p>Jugado el 25 de octubre</p>
-                    <p>Estadio: Talleres</p>
-                    <p>Arbitro: Vitalino Giambartolomei</p>
-                    <p>Recaudación: $14.953</p>
-                    <h3>Formaciones</h3>
-                    <p>Talleres: Fernández; Mansilla y Blanco; Turzam Willington y Calderón; Sosa, Cuello, Savino, Recuero y Gambino</p>
-                    <p>Racing: Guibaudo; Fenopasse y Murúa; Romero, Olmedo y Godoy; Mattasini, Pavan, Bonoghi, Salvatierra y Baghín</p>
-                    <h3>Gol de Racing</h3>
-                    <p>Primero tiempo: 13' Bonogli</p>
-                    <h3>Goles de Talleres</h3>
-                    <p>Segundo tiempo: 41' Savino, 55' Gambino</p>
-                </div>
-            </div>
-        </section>
+    <div class="progress-bar" id="progressBar"></div>
 
-        <section>
-            <h2>Goleadores</h2>
-            <table>
+    <section class="hero">
+        <div class="hero-content">
+            <span class="tournament-badge">Liga Cordobesa</span>
+
+            <h1>Torneo Oficial</h1>
+            
+            <div class="hero-image-container">
+                <img src="../../Album/fotos/1953/portada.jpg" alt="Torneo" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="section matches-section" id="partidos">
+        <h2 class="section-title-table fade-in">Partidos Jugados</h2>
+        <div class="matches-container">
+            <div class="match-item fade-in">
+                <div class="match-header">
+                    <div>
+                        <span class="match-date">Fecha 1 - 25/10/1953</span>
+                        <div class="match-result">
+                            <span class="team-home">Talleres</span>
+                            <span class="score">2 - 1</span>
+                            <span>Racing</span>
+                        </div>
+                    </div>
+                    <div class="match-toggle">&#9660;</div>
+                </div>
+                <div class="match-details">
+                    <div class="match-details-content">
+                        <!-- Si no hay formación, deja solo el div con clase "no-formation" -->
+                        <!-- <p class="no-formation">Formación no disponible</p> -->
+                        
+                        <!-- Si hay formación, usa este bloque -->
+                        <div class="formations">
+                            <div class="formation-team home">
+                                <h4>Talleres</h4>
+                                <ul class="formation-list">
+                                    <li>1. Fernández</li>
+                                    <li>2. Mansilla</li>
+                                    <li>3. Blanco</li>
+                                    <li>4. Turzam</li>
+                                    <li>5. Willington</li>
+                                    <li>6. Calderon</li>
+                                    <li>7. Sosa</li>
+                                    <li>8. Cuello</li>
+                                    <li>9. Savino</li>
+                                    <li>10. Recuero</li>
+                                    <li>11. Gambino</li>
+                                </ul>
+                            </div>
+                            <div class="formation-team away">
+                                <h4>Racing</h4>
+                                <ul class="formation-list">
+                                    <li>1. Giabaudo</li>
+                                    <li>2. Fenopasse</li>
+                                    <li>3. Murúa</li>
+                                    <li>4. Romero</li>
+                                    <li>5. Olmedo</li>
+                                    <li>6. Godoy</li>
+                                    <li>7. Mattasinni</li>
+                                    <li>8. Pavan</li>
+                                    <li>9. Bonoghi</li>
+                                    <li>10. Salvatierra</li>
+                                    <li>11. Bahín</li>
+                                </ul>
+                            </div>
+                            <p class="recaudation">Recaudacion: $14.953</p>
+                            <p class="referee">Vitalino Gambartolomei</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="match-item fade-in">
+                <div class="match-header">
+                    <div>
+                        <span class="match-date">Fecha 2</span>
+                        <div class="match-result">
+                            <span class="team-home">Talleres</span>
+                            <span class="score">2 - 2</span>
+                            <span>Instituto</span>
+                        </div>
+                    </div>
+                    <div class="match-toggle">&#9660;</div>
+                </div>
+                <div class="match-details">
+                    <div class="match-details-content">
+                        <p class="no-formation">Formación no disponible</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section scorers-section" id="goleadores">
+        <h2 class="section-title fade-in">Tabla de Goleadores</h2>
+        <div class="scorers-table-container fade-in">
+            <table class="scorers-table">
                 <thead>
                     <tr>
                         <th>Jugador</th>
@@ -163,153 +143,176 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <!-- Lista de goleadores -->
                     <tr>
-                        <td>Sosa</td>
+                        <td><span class="scorer-rank gold">1</span>Sosa</td>
                         <td>14</td>
                     </tr>
                     <tr>
-                        <td>Cuello</td>
+                        <td><span class="scorer-rank">2</span>Cuello</td>
                         <td>12</td>
                     </tr>
                     <tr>
-                        <td>Savino</td>
+                        <td><span class="scorer-rank">3</span>Savino</td>
                         <td>5</td>
                     </tr>
                     <tr>
-                        <td>Gambino</td>
-                        <td>4</td>
+                        <td><span class="scorer-rank">4</span>Gambino</td>
+                        <td>5</td>
                     </tr>
                     <tr>
-                        <td>A. López</td>
+                        <td><span class="scorer-rank">5</span>López</td>
                         <td>2</td>
                     </tr>
                     <tr>
-                        <td>Ramayo</td>
+                        <td><span class="scorer-rank">6</span>Ramayo</td>
                         <td>1</td>
                     </tr>
                     <tr>
-                        <td>Blanco</td>
+                        <td><span class="scorer-rank">7</span>Blanco</td>
                         <td>1</td>
                     </tr>
                 </tbody>
             </table>
-        </section>
-
-        <section>
-            <h2>Tabla de Posiciones</h2>
-            <table> 
-                <thead> 
-                    <tr> 
-                        <th>Equipo</th> 
-                        <th>J</th> 
-                        <th>G</th> 
-                        <th>E</th> 
-                        <th>P</th> 
-                        <th>GF</th> 
-                        <th>GC</th> 
-                        <th>Pts</th> 
-                    </tr> 
-                </thead> 
-                <tbody> 
-                    <tr> 
-                        <td>Talleres</td> 
-                        <td>16</td> 
-                        <td>9</td> 
-                        <td>4</td> 
-                        <td>3</td> 
-                        <td>39</td> 
-                        <td>28</td> 
-                        <td>22</td> 
-                    </tr> 
-                    <tr> 
-                        <td>Belgrano</td> 
-                        <td>16</td> 
-                        <td>8</td> 
-                        <td>5</td> 
-                        <td>3</td> 
-                        <td>45</td> 
-                        <td>24</td> 
-                        <td>21</td> 
-                    </tr> 
-                    <tr> 
-                        <td>Instituto</td> 
-                        <td>16</td> 
-                        <td>8</td> 
-                        <td>4</td> 
-                        <td>4</td> 
-                        <td>33</td> 
-                        <td>29</td> 
-                        <td>20</td> 
-                    </tr> 
-                    <tr> 
-                        <td>Juniors</td> 
-                        <td>16</td> 
-                        <td>7</td> 
-                        <td>3</td> 
-                        <td>6</td> 
-                        <td>31</td> 
-                        <td>25</td> 
-                        <td>17</td> 
-                    </tr> 
-                    <tr> 
-                        <td>Sportivo Belgrano</td> 
-                        <td>16</td> 
-                        <td>4</td> 
-                        <td>7</td> 
-                        <td>5</td> 
-                        <td>27</td> 
-                        <td>24</td> 
-                        <td>15</td> 
-                    </tr> 
-                    <tr> 
-                        <td>Esc. Presidente Roca</td> 
-                        <td>16</td> 
-                        <td>6</td> 
-                        <td>3</td> 
-                        <td>7</td> 
-                        <td>30</td> 
-                        <td>41</td> 
-                        <td>15</td> 
-                    </tr> 
-                    <tr> 
-                        <td>Racing</td> 
-                        <td>16</td> 
-                        <td>5</td> 
-                        <td>4</td> 
-                        <td>7</td> 
-                        <td>28</td> 
-                        <td>26</td> 
-                        <td>14</td> 
-                    </tr> 
+        </div>
+    </section>
+    <section class="section standings-section" id="posiciones">
+        <h2 class="section-title-table fade-in">Tabla de Posiciones</h2>
+        <div class="standings-table-container fade-in">
+            <table class="standings-table">
+                <thead>
                     <tr>
-                        <td>Peñarol</td> 
-                        <td>16</td> 
-                        <td>4</td> 
-                        <td>2</td> 
-                        <td>10</td> 
-                        <td>20</td> 
-                        <td>41</td> 
-                        <td>10</td> 
+                        <th>#</th>
+                        <th>Equipo</th>
+                        <th>J</th>
+                        <th>G</th>
+                        <th>E</th>
+                        <th>P</th>
+                        <th>GF</th>
+                        <th>GC</th>
+                        <th>Pts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Agregar equipos. Usa la clase "highlight" para el campeon -->
+                    <tr class="highlight">
+                        <td>1</td>
+                        <td>
+                            <div class="team-name">
+                                Talleres
+                            </div>
+                        </td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
                     </tr>
                     <tr>
-                        <td>Universitario</td> 
-                        <td>16</td> 
-                        <td>3</td> 
-                        <td>4</td> 
-                        <td>9</td> 
-                        <td>24</td> 
-                        <td>39</td> 
-                        <td>10</td> 
-                    </tr> 
-                </tbody> 
-            </table> 
-        </section>
-    </div>
+                        <td>2</td>
+                        <td>
+                            <div class="team-name">
+                                Instituto
+                            </div>
+                        </td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <div class="team-name">
+                                Belgrano
+                            </div>
+                        </td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="section squad-section" id="plantel">
+        <h2 class="section-title fade-in">Plantel</h2>
+        <div class="squad-container">
+            <div class="squad-grid">
+                <!-- Agrega jugadores del plantel -->
+                <div class="player-card fade-in">
+                    <span class="player-number">1</span>
+                    <p class="player-name">Nombre Apellido</p>
+                    <p class="player-position">Arquero</p>
+                </div>
+                <div class="player-card fade-in">
+                    <span class="player-number">2</span>
+                    <p class="player-name">Nombre Apellido</p>
+                    <p class="player-position">Defensor</p>
+                </div>
+                <div class="player-card fade-in">
+                    <span class="player-number">3</span>
+                    <p class="player-name">Nombre Apellido</p>
+                    <p class="player-position">Defensor</p>
+                </div>
+                <div class="player-card fade-in">
+                    <span class="player-number">4</span>
+                    <p class="player-name">Nombre Apellido</p>
+                    <p class="player-position">Defensor</p>
+                </div>
+                <div class="player-card fade-in">
+                    <span class="player-number">5</span>
+                    <p class="player-name">Nombre Apellido</p>
+                    <p class="player-position">Mediocampista</p>
+                </div>
+                <div class="player-card fade-in">
+                    <span class="player-number">6</span>
+                    <p class="player-name">Nombre Apellido</p>
+                    <p class="player-position">Mediocampista</p>
+                </div>
+                <div class="player-card fade-in">
+                    <span class="player-number">7</span>
+                    <p class="player-name">Nombre Apellido</p>
+                    <p class="player-position">Mediocampista</p>
+                </div>
+                <div class="player-card fade-in">
+                    <span class="player-number">8</span>
+                    <p class="player-name">Nombre Apellido</p>
+                    <p class="player-position">Mediocampista</p>
+                </div>
+                <div class="player-card fade-in">
+                    <span class="player-number">9</span>
+                    <p class="player-name">Nombre Apellido</p>
+                    <p class="player-position">Delantero</p>
+                </div>
+                <div class="player-card fade-in">
+                    <span class="player-number">10</span>
+                    <p class="player-name">Nombre Apellido</p>
+                    <p class="player-position">Delantero</p>
+                </div>
+                <div class="player-card fade-in">
+                    <span class="player-number">11</span>
+                    <p class="player-name">Nombre Apellido</p>
+                    <p class="player-position">Delantero</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <p>© 2025 Expediente Talleres. Este sitio no es oficial ni está afiliado con el Club Atletico Talleres.</p>
         <p>Las imágenes y contenidos relacionados con el club son propiedad de sus respectivos dueños.</p>
         <p>Fotografías de Gabriel Incardona utilizadas con fines ilustrativos. Todos los derechos pertenecen a sus autores.</p>
-        <p>Para reclamos o contacto: <a class="links" href="mailto:tuemail@ejemplo.com">expedientetalleres@gmail.com</a></p>
+        <p>Para reclamos o contacto: <a class="links" href="expedientetalleres@gmail.com">expedientetalleres@gmail.com</a></p>
 
         <div style="margin-top: 1rem;">
             <strong>Redes sociales del sitio:</strong><br>
@@ -325,16 +328,6 @@
             <a class="links" href="https://www.facebook.com/gabiincardona17/" target="_blank">Facebook</a>
         </div>
     </footer>
-    <script>
-        function ToggleGoles(partido) {
-            const goles = partido.querySelector('.goles');
-            if (goles.style.display === 'none' || goles.style.display === '') {
-                goles.style.display = 'block';
-            } else {
-                goles.style.display = 'none';
-            }
-        }
-    </script>
     <script src="../campañas.js"></script>
 </body>
 </html>

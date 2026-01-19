@@ -809,34 +809,25 @@ const albumData = {
                 ]   
             },
         };
-
-        // =====================================================
-        // LOGICA DE LA APLICACION
-        // =====================================================
-        
         let currentYear = null;
         let currentPhotoIndex = 0;
         const decades = ['1910s', '1920s', '1930s', '1940s', '1950s', '1960s', '1970s', '1980s', '1990s', '2000s', '2010s', '2020s'];
 
-        // Inicializar
         document.addEventListener('DOMContentLoaded', () => {
             generateFilters();
             renderYears(Object.keys(albumData).sort((a, b) => a - b));
             setupKeyboardNav();
         });
 
-        // Generar filtros de decadas
         function generateFilters() {
             const container = document.getElementById('decadeFilters');
             
-            // Boton "Todos"
             const allBtn = document.createElement('button');
             allBtn.className = 'filter-pill active';
             allBtn.textContent = 'Todos';
             allBtn.onclick = () => filterByDecade('all', allBtn);
             container.appendChild(allBtn);
             
-            // Botones por decada
             decades.forEach(decade => {
                 const btn = document.createElement('button');
                 btn.className = 'filter-pill';
@@ -846,7 +837,6 @@ const albumData = {
             });
         }
 
-        // Renderizar años
         function renderYears(years) {
             const grid = document.getElementById('yearsGrid');
             const count = document.getElementById('resultsCount');
@@ -872,7 +862,6 @@ const albumData = {
             });
         }
 
-        // Filtrar por decada
         function filterByDecade(decade, btn) {
             document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
             btn.classList.add('active');
@@ -890,7 +879,6 @@ const albumData = {
             renderYears(filtered);
         }
 
-        // Busqueda
         document.getElementById('yearSearch').addEventListener('input', function(e) {
             const value = e.target.value.trim();
             if (!value) {
@@ -905,7 +893,6 @@ const albumData = {
             renderYears(filtered);
         });
 
-        // Abrir modal de galeria
         function openGalleryModal(year) {
             currentYear = year;
             const data = albumData[year];
@@ -936,20 +923,17 @@ const albumData = {
             document.body.style.overflow = 'hidden';
         }
 
-        // Cerrar modal de galeria
         function closeGalleryModal() {
             document.getElementById('galleryModal').classList.remove('active');
             document.body.style.overflow = '';
         }
 
-        // Abrir modal de detalle
         function openDetailModal(index) {
             currentPhotoIndex = index;
             updateDetailModal();
             document.getElementById('detailModal').classList.add('active');
         }
 
-        // Actualizar modal de detalle
         function updateDetailModal() {
             const data = albumData[currentYear];
             const photo = data.photos[currentPhotoIndex];
@@ -964,7 +948,6 @@ const albumData = {
             document.getElementById('nextBtn').disabled = currentPhotoIndex === data.photos.length - 1;
         }
 
-        // Navegar entre fotos
         function navigatePhoto(direction) {
             const data = albumData[currentYear];
             const newIndex = currentPhotoIndex + direction;
@@ -975,12 +958,10 @@ const albumData = {
             }
         }
 
-        // Cerrar modal de detalle
         function closeDetailModal() {
             document.getElementById('detailModal').classList.remove('active');
         }
 
-        // Navegacion por teclado
         function setupKeyboardNav() {
             document.addEventListener('keydown', (e) => {
                 if (document.getElementById('detailModal').classList.contains('active')) {

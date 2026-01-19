@@ -645,7 +645,6 @@ footer {
   }
 }
 
-/* Section Styles */
 .section-header {
   text-align: center;
   margin-bottom: 4rem;
@@ -677,7 +676,6 @@ footer {
   margin: 0 auto;
 }
 
-/* Carousel Section */
 .carousel-section {
   background: var(--off-white);
 }
@@ -771,7 +769,6 @@ footer {
   letter-spacing: 1px;
 }
 
-/* Carousel Buttons */
 .carousel-btn {
   flex-shrink: 0;
   width: 50px;
@@ -799,7 +796,6 @@ footer {
   cursor: not-allowed;
 }
 
-/* Carousel Indicators */
 .carousel-indicators {
   display: flex;
   justify-content: center;
@@ -825,7 +821,6 @@ footer {
   background: var(--primary-blue);
 }
 
-/* Destacados Section */
 .destacados-section {
   background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
   position: relative;
@@ -842,7 +837,7 @@ footer {
 
 .destacados-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
 }
 
@@ -955,7 +950,6 @@ footer {
   transform: scale(1.05);
 }
 
-/* Quote Section */
 .quote-section {
   background: #fff;
 }
@@ -1003,7 +997,6 @@ footer {
   text-transform: uppercase;
 }
 
-/* Responsive */
 @media (max-width: 1200px) {
   .destacados-grid {
     grid-template-columns: 1fr;

@@ -1,4 +1,3 @@
-// Navbar scroll effect
 const navbar = document.querySelector(".navbar")
 
 window.addEventListener("scroll", () => {
@@ -9,7 +8,6 @@ window.addEventListener("scroll", () => {
   }
 })
 
-// Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault()
@@ -24,7 +22,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   })
 })
 
-// Create floating particles in hero
 function createParticles() {
   const particlesContainer = document.getElementById("particles")
   if (!particlesContainer) return
@@ -46,7 +43,6 @@ function createParticles() {
 
 createParticles()
 
-// Intersection Observer for caravana cards
 const observerOptions = {
   root: null,
   rootMargin: "0px",
@@ -65,7 +61,6 @@ document.querySelectorAll(".caravana-card").forEach((card) => {
   cardObserver.observe(card)
 })
 
-// Counter animation for stats
 function animateCounter(element, target) {
   const duration = 2000
   const start = 0
@@ -91,7 +86,6 @@ function animateCounter(element, target) {
   requestAnimationFrame(update)
 }
 
-// Observe stats for counter animation
 const statsObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -108,7 +102,6 @@ const statsObserver = new IntersectionObserver(
   { threshold: 0.5 },
 )
 
-// Observe hero stats
 const heroStats = document.querySelector(".hero-stats")
 if (heroStats) {
   statsObserver.observe(heroStats)
@@ -120,7 +113,6 @@ if (statsSection) {
   statsObserver.observe(statsSection)
 }
 
-// Parallax effect for hero section
 const hero = document.querySelector(".hero")
 const heroContent = document.querySelector(".hero-content")
 
@@ -132,12 +124,10 @@ window.addEventListener("scroll", () => {
   }
 })
 
-// Detail items hover animation
 document.querySelectorAll(".detail-item").forEach((item, index) => {
   item.style.transitionDelay = `${index * 0.05}s`
 })
 
-// Add tilt effect to caravana images
 document.querySelectorAll(".caravana-image").forEach((image) => {
   image.addEventListener("mousemove", (e) => {
     const rect = image.getBoundingClientRect()
@@ -156,7 +146,6 @@ document.querySelectorAll(".caravana-image").forEach((image) => {
   })
 })
 
-// Typing effect for quote
 const quoteText = document.querySelector(".main-quote p")
 if (quoteText) {
   const originalText = quoteText.textContent
@@ -188,7 +177,6 @@ if (quoteText) {
   quoteObserver.observe(quoteText)
 }
 
-// Stats cards stagger animation
 const statsCards = document.querySelectorAll(".stats-card")
 const statsCardsObserver = new IntersectionObserver(
   (entries) => {

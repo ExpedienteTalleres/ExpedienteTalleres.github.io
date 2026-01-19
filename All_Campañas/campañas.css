@@ -194,9 +194,11 @@ label {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
 #searchButton:hover {
     background-color: #45a049;
 }
+
 .menu_hamburguesa {
     display: none;
     flex-direction: column;
@@ -212,6 +214,7 @@ label {
     z-index: 1000;
     position: relative;
 }
+
 .close-menu {
     display: none;
     position: absolute;
@@ -223,9 +226,11 @@ label {
     z-index: 1002;
     cursor: pointer;
 }
+
 .close-menu.show {
     display: block;
 }
+
 @media (max-width: 768px) {
     .header{
         display: flex;
