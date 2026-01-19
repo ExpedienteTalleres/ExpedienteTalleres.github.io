@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caravanas - Expediente Talleres</title>
+    <link rel="stylesheet" href="caravanas.css">
+    <link rel="icon" href="../Recursos/escudo.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+    <div class="box">
+        <img src="../Recursos/escudo.png" alt="Escudo de Talleres" class="escudo">
+        <button class="menu_hamburguesa" aria-label="Abrir menú">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+    </div>
+    <nav class="nav">
+        <div class="nav__ul-container">
+            <ul class="nav__ul">
+                <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
+                <li class="nav__item"><a href="../All_Campañas/campañas.html" class="nav__link">Campañas</a></li>
+                <li class="nav__item"><a href="../All_historiales/historial.html" class="nav__link">Historiales</a></li>
+                <li class="nav__item"><a href="../Album/Album.html" class="nav__link">Álbum</a></li>
+                <li class="nav__item"><a href="../All_presidentes/presidentes.html" class="nav__link">Presidentes</a></li>
+                <li class="nav__item"><a href="../Recaudaciones/recaudaciones.html" class="nav__link">Recaudaciones</a></li>
+                <li class="nav__item"><a href="../Idolos/idolos.html" class="nav__link">Idolos</a></li>
+                <li class="nav__item"><a href="../Archivo/archivo.html" class="nav__link">Archivo</a></li>
+                <li class="nav_item"><a href="./caravanas.html" class="nav__link">Caravanas</a></li>
+                <button class="close-menu" aria-label="Cerrar menú">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">CARAVANAS</h1>
+            <p class="hero-subtitle">Grande por su historia, gigante por su gente.</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="11">0</span>
+                    <span class="stat-label">Caravanas</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="50">0</span>
+                    <span class="stat-label">Años de Historia</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="500000">0</span>
+                    <span class="stat-label">Hinchas Movilizados</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>EXPLORAR</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <!-- Caravanas Section -->
+    <section id="caravanas" class="caravanas-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Las Caravanas que Hicieron Historia</h2>
+            </div>
+
+            <!-- Caravana 1 -->
+            <div class="caravana-card">
+                <span class="caravana-number">01</span>
+                <div class="caravana-content">
+                    <div class="caravana-image">
+                        <img src="./TalleresVsRiver/foto2.jpeg" alt="Caravana Nacional 1974">
+                    </div>
+                    <div class="caravana-info">
+                        <span class="caravana-badge">NACIONAL</span>
+                        <h3 class="caravana-title">El Cordobazo</h3>
+                        <div class="caravana-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">📅</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Fecha</span>
+                                    <span class="detail-value">15 de Septiembre de 1974</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📍</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Ubicación</span>
+                                    <span class="detail-value">Estadio Presidente Perón (El Cilindro de Avellaneda)</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">⚔️</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Rival</span>
+                                    <span class="detail-value">Club Atlético River Plate</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">👥</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Convocatoria</span>
+                                    <span class="detail-value highlight">+20.000 personas</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="caravana-description">El día que Talleres fue local en Avellaneda, fue un "Cordobazo". Una marea albiazul invadió Buenos Aires demostrando que la pasión cordobesa no conoce fronteras.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Caravana 2 -->
+            <div class="caravana-card">
+                <span class="caravana-number">02</span>
+                <div class="caravana-content reverse">
+                    <div class="caravana-image">
+                        <img src="./TalleresVsNewells/foto1.jpeg" alt="Caravana en Rosario">
+                    </div>
+                    <div class="caravana-info">
+                        <span class="caravana-badge">NACIONAL</span>
+                        <h3 class="caravana-title">La Invasión en Rosario</h3>
+                        <div class="caravana-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">📅</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Fecha</span>
+                                    <span class="detail-value">03 de noviembre de 1974</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📍</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Ubicación</span>
+                                    <span class="detail-value">Estadio ubicado en el Parque Independencia</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">⚔️</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Rival</span>
+                                    <span class="detail-value">Newell´s Old Boys</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">👥</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Convocatoria</span>
+                                    <span class="detail-value highlight">+10.000 personas</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="caravana-description">En la imagen, el arquero de Newell´s viendo como Fachetti hace el 1-1 en un partido historico donde Talleres quedó muy cerca de la clasificación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Caravana 3 -->
+            <div class="caravana-card">
+                <span class="caravana-number">03</span>
+                <div class="caravana-content">
+                    <div class="caravana-image">
+                        <img src="./TalleresVsAtlanta/foto1.jpeg" alt="Caravana contra Atlanta 1975"/>
+                    </div>
+                    <div class="caravana-info">
+                        <span class="caravana-badge">NACIONAL</span>
+                        <h3 class="caravana-title">La Primera gran Caravana</h3>
+                        <div class="caravana-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">📅</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Fecha</span>
+                                    <span class="detail-value">30 de Noviembre de 1975</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📍</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Ubicación</span>
+                                    <span class="detail-value">En el actual León Kolbowski en Villa Crespo</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">⚔️</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Rival</span>
+                                    <span class="detail-value">Club Atlético Atlanta</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">👥</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Convocatoria</span>
+                                    <span class="detail-value highlight">+15.000 personas</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="caravana-description">"Córdoba se hizo país en Buenos Aires", éste día Talleres le proporcino un 3-0 a su rival clasificando a la ronda final del Nacional.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Caravana 4 -->
+            <div class="caravana-card">
+                <span class="caravana-number">04</span>
+                <div class="caravana-content reverse">
+                    <div class="caravana-image">
+                        <img src="./TalleresVsNewells/foto2.jpeg" alt="Otra Caravana en Rosario">
+                    </div>
+                    <div class="caravana-info">
+                        <span class="caravana-badge">NACIONAL</span>
+                        <h3 class="caravana-title">La Costumbre</h3>
+                        <div class="caravana-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">📅</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Fecha</span>
+                                    <span class="detail-value">14 de Noviembre de 1976</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📍</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Ubicación</span>
+                                    <span class="detail-value">Estadio ubicado en el Parque Independencia</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">⚔️</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Rival</span>
+                                    <span class="detail-value">Newell´s Old Boys</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">👥</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Convocatoria</span>
+                                    <span class="detail-value highlight">10.000 personas</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="caravana-description">Una costumbre copar el estadio de Newell´s, ese dia los hinchas albiazules festejaron la punta absoluta en la zona "D".</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Caravana 5 -->
+            <div class="caravana-card">
+                <span class="caravana-number">05</span>
+                <div class="caravana-content">
+                    <div class="caravana-image">
+                        <img src="./TalleresVsColon/foto1.jpeg" alt="Caravana en Santa Fe">
+                    </div>
+                    <div class="caravana-info">
+                        <span class="caravana-badge">Nacional</span>
+                        <h3 class="caravana-title">Clasificación Agonica</h3>
+                        <div class="caravana-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">📅</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Fecha</span>
+                                    <span class="detail-value">12 de Diciembre de 1976</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📍</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Ubicación</span>
+                                    <span class="detail-value">Santa Fe</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">⚔️</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Rival</span>
+                                    <span class="detail-value">Club Atlético Colón</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">👥</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Convocatoria</span>
+                                    <span class="detail-value highlight">10.000 personas</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="caravana-description">La "T" consiguió el empate sobre el final del partido con un gol deCHerini y de esta forma logró la clasificación a las fases finales del torneo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Caravana 6 -->
+            <div class="caravana-card">
+                <span class="caravana-number">06</span>
+                <div class="caravana-content reverse">
+                    <div class="caravana-image">
+                        <img src="./TalleresVsRiver2/foto1.jpeg" alt="Caravana en la Bombonera">
+                    </div>
+                    <div class="caravana-info">
+                        <span class="caravana-badge">Nacional</span>
+                        <h3 class="caravana-title">Bombonera</h3>
+                        <div class="caravana-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">📅</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Fecha</span>
+                                    <span class="detail-value">19 de Diciembre de 1976</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📍</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Ubicación</span>
+                                    <span class="detail-value">Estadio Dr. Camilo Cichero (hoy La Bombonera)</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">⚔️</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Rival</span>
+                                    <span class="detail-value">Club Atlético River Plate</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">👥</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Convocatoria</span>
+                                    <span class="detail-value highlight">20.000 personas</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="caravana-description">En la imagen, el acompañamiento de los hinchas que coparon las miticas tribunas de La Bombonera.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Caravana 7 -->
+            <div class="caravana-card">
+                <span class="caravana-number">07</span>
+                <div class="caravana-content">
+                    <div class="caravana-image">
+                        <img src="./TalleresVsIndependiente/foto1.jpeg" alt="Caravana en la Doble Visera">
+                    </div>
+                    <div class="caravana-info">
+                        <span class="caravana-badge">Nacional</span>
+                        <h3 class="caravana-title">La Doble Visera</h3>
+                        <div class="caravana-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">📅</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Fecha</span>
+                                    <span class="detail-value">20 de Enero de 1978</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📍</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Ubicación</span>
+                                    <span class="detail-value">Estadio Independiente (la Doble Visera)</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">⚔️</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Rival</span>
+                                    <span class="detail-value">Club Atlético Independiente</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">👥</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Convocatoria</span>
+                                    <span class="detail-value highlight">15.000 personas</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="caravana-description">Talleres logró empatar un controversial encuentro en el primer partido de la final por el Nacional 1977.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Caravana 8 -->
+            <div class="caravana-card">
+                <span class="caravana-number">08</span>
+                <div class="caravana-content reverse">
+                    <div class="caravana-image">
+                        <img src="./TalleresVsIndependiente/foto2.jpeg" alt="Caravana en la final">
+                    </div>
+                    <div class="caravana-info">
+                        <span class="caravana-badge">NACIONAL</span>
+                        <h3 class="caravana-title">La Ilusión del Nacional</h3>
+                        <div class="caravana-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">📅</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Fecha</span>
+                                    <span class="detail-value">30 de Diciembre de 1978</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📍</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Ubicación</span>
+                                    <span class="detail-value">Estadio Independiente (la Doble Visera)</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">⚔️</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Rival</span>
+                                    <span class="detail-value">Club Atlético Independiente</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">👥</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Convocatoria</span>
+                                    <span class="detail-value highlight">15.000 personas</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="caravana-description">Está vez el seguimiento de los hinchas fue igual a la final del torneo anterior pero está vez por la semifinal del Nacional 1978.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Caravana 9 -->
+            <div class="caravana-card">
+                <span class="caravana-number">09</span>
+                <div class="caravana-content">
+                    <div class="caravana-image">
+                        <img src="./TalleresVsNewells/foto3.jpeg" alt="Caravana en Rosario">
+                    </div>
+                    <div class="caravana-info">
+                        <span class="caravana-badge">Nacional</span>
+                        <h3 class="caravana-title">Sana Costumbre</h3>
+                        <div class="caravana-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">📅</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Fecha</span>
+                                    <span class="detail-value">14 de Octubre de 1979</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📍</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Ubicación</span>
+                                    <span class="detail-value">Estadio ubicado en el Parque Independencia</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">⚔️</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Rival</span>
+                                    <span class="detail-value">Newell´s Old Boys</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">👥</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Convocatoria</span>
+                                    <span class="detail-value highlight">10.000 personas</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="caravana-description">Talleres puntero e invicto empataba contra los rosarinos 1-1 con gol de Guerini a los 47'.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Caravana 10 -->
+            <div class="caravana-card">
+                <span class="caravana-number">10</span>
+                <div class="caravana-content reverse">
+                    <div class="caravana-image">
+                        <img src="./TalleresVsBoca/foto1.jpeg" alt="Caravana en la final">
+                    </div>
+                    <div class="caravana-info">
+                        <span class="caravana-badge">COPA ARGENTINA</span>
+                        <h3 class="caravana-title">Final</h3>
+                        <div class="caravana-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">📅</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Fecha</span>
+                                    <span class="detail-value">8 de Diciembre de 2021</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📍</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Ubicación</span>
+                                    <span class="detail-value">Estadio Único Madre de Ciudades</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">⚔️</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Rival</span>
+                                    <span class="detail-value">Club Atlético Boca Juniors</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">👥</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Convocatoria</span>
+                                    <span class="detail-value highlight">15.000 personas</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="caravana-description">La primera final de un torneo nacional despues de 43 años, el acompañamiento fue acorde a la sitaución.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Caravana 11 -->
+            <div class="caravana-card">
+                <span class="caravana-number">11</span>
+                <div class="caravana-content">
+                    <div class="caravana-image">
+                        <img src="./TalleresVsBanfield/foto1.jpeg" alt="Caravana semifinal">
+                    </div>
+                    <div class="caravana-info">
+                        <span class="caravana-badge">COPA ARGENTINA</span>
+                        <h3 class="caravana-title">Una multitud</h3>
+                        <div class="caravana-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">📅</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Fecha</span>
+                                    <span class="detail-value">26 de Octubre de 2022</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📍</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Ubicación</span>
+                                    <span class="detail-value">Estadio Marcelo Bielsa</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">⚔️</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Rival</span>
+                                    <span class="detail-value">Club Atlético Banfield</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">👥</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Convocatoria</span>
+                                    <span class="detail-value highlight">20.000 personas</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="caravana-description">Una multitud viajó a Rosario para presenciar como Talleres ingresaba por segundo año consecutivo a la final de la Copa Argentina.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Caravana 12 -->
+            <div class="caravana-card">
+                <span class="caravana-number">12</span>
+                <div class="caravana-content">
+                    <div class="caravana-image">
+                        <img src="./TalleresVsPatronato/foto1.jpeg" alt="Caravana en otra final">
+                    </div>
+                    <div class="caravana-info">
+                        <span class="caravana-badge">COPA ARGENTINA</span>
+                        <h3 class="caravana-title">La Gloriosa Gente</h3>
+                        <div class="caravana-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">📅</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Fecha</span>
+                                    <span class="detail-value">30 de Octubre de 2022</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📍</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Ubicación</span>
+                                    <span class="detail-value">Estadio Malvinas Argentinas</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">⚔️</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Rival</span>
+                                    <span class="detail-value">Club Atlético Patronato de la Juventud Católica</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">👥</span>
+                                <div class="detail-content">
+                                    <span class="detail-label">Convocatoria</span>
+                                    <span class="detail-value highlight">35.000 personas</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="caravana-description">La mayor convocatoria de la historia del fútbol cordobes, más de 30mil almas viajaron a Mendoza.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="main-quote">
+                <p>Cuando mires para el tablón yo voy a estar siempre con vos.</p>
+                <cite>— La Hinchada Matadora</cite>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2025 Expediente Talleres. Este sitio no es oficial ni está afiliado con el Club Atletico Talleres.</p>
+        <p>Las imágenes y contenidos relacionados con el club son propiedad de sus respectivos dueños.</p>
+        <p>Fotografías de Gabriel Incardona utilizadas con fines ilustrativos. Todos los derechos pertenecen a sus autores.</p>
+        <p>Para reclamos o contacto: <a class="links" href="mailto:tuemail@ejemplo.com">expedientetalleres@gmail.com</a></p>
+
+        <div style="margin-top: 1rem;">
+            <strong>Redes sociales del sitio:</strong><br>
+            <a class="links" href="https://www.instagram.com/expedientecat/" target="_blank">Instagram</a> |
+            <a class="links" href="https://x.com/ExpedienteCat" target="_blank">Twitter/X</a>
+        </div>
+        <strong>Gabriel Incardona:</strong><br>
+            <a class="links" href="https://www.instagram.com/gabiincardona17/" target="_blank">Instagram</a> |
+            <a class="links" href="https://x.com/GabiIncardona17" target="_blank">Twitter/X</a> |
+            <a class="links" href="https://www.youtube.com/@grandeporsuhistoria">Youtube</a> |
+            <a class="links" href="https://www.facebook.com/gabiincardona17/" target="_blank">Facebook</a>
+        </div>
+    </footer>
+    <script src="./caravanas.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const btnHamb = document.querySelector('.menu_hamburguesa');
+            const navLista = document.querySelector('.nav__ul');
+            const closeBtn = document.querySelector('.close-menu');
+        
+            btnHamb.addEventListener('click', () => {
+                navLista.classList.add('active');
+                btnHamb.classList.add('hide');
+                closeBtn.classList.add('show');
+            });
+        
+            closeBtn.addEventListener('click', () => {
+                navLista.classList.remove('active');
+                btnHamb.classList.remove('hide');
+                closeBtn.classList.remove('show');
+            });
+        });
+    </script>
+</body>
+</html>
