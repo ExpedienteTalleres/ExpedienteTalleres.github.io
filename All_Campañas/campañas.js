@@ -102,14 +102,12 @@ window.addEventListener('scroll', () => {
             
             warningMessage.style.display = 'none';
             
-            // Ruta correcta: All_Campañas/AÑO/TORNEO.html
             const fileUrl = `./${year}/${tournament}`;
             
             console.log('Intentando abrir:', fileUrl);
             window.location.href = fileUrl;
         });
 
-        // Inicializar la página
         document.addEventListener('DOMContentLoaded', function() {
             populateYears();
             console.log('Campañas inicializado. Torneos disponibles:', Object.keys(TORNEOS).length);

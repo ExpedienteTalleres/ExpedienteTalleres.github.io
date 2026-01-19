@@ -1,4 +1,4 @@
-// Progress Bar
+
 function updateProgressBar() {
   const scrollTop = window.scrollY
   const docHeight = document.documentElement.scrollHeight - window.innerHeight
@@ -6,7 +6,6 @@ function updateProgressBar() {
   document.getElementById("progressBar").style.width = scrollPercent + "%"
 }
 
-// Create Particles
 function createParticles() {
   const container = document.getElementById("particles")
   if (!container) return
@@ -24,7 +23,6 @@ function createParticles() {
   }
 }
 
-// Navbar scroll effect
 function handleNavbarScroll() {
   const navbar = document.getElementById("navbar")
   if (window.scrollY > 100) {
@@ -34,7 +32,6 @@ function handleNavbarScroll() {
   }
 }
 
-// Animate counters
 function animateCounters() {
   const counters = document.querySelectorAll(".stat-number")
 
@@ -58,7 +55,6 @@ function animateCounters() {
   })
 }
 
-// Carousel functionality
 class Carousel {
   constructor() {
     this.track = document.getElementById("carouselTrack")
@@ -168,7 +164,6 @@ class Carousel {
   }
 }
 
-// Intersection Observer for destacado cards
 function initDestacadoAnimations() {
   const cards = document.querySelectorAll(".destacado-card")
 
@@ -188,13 +183,11 @@ function initDestacadoAnimations() {
   cards.forEach((card) => observer.observe(card))
 }
 
-// Initialize everything
 document.addEventListener("DOMContentLoaded", () => {
   createParticles()
   new Carousel()
   initDestacadoAnimations()
 
-  // Trigger counter animation when in view
   const heroObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -211,7 +204,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (heroStats) heroObserver.observe(heroStats)
 })
 
-// Scroll events
 window.addEventListener("scroll", () => {
   updateProgressBar()
   handleNavbarScroll()
