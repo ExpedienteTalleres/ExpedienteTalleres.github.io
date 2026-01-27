@@ -8,12 +8,13 @@
       }
     });
 
-    window.addEventListener('scroll', function() {
-      const scrolled = window.scrollY;
-      if (heroImage) {
-        heroImage.style.transform = 'scale(1.1) translateY(' + scrolled * 0.3 + 'px)';
-      }
-    });
+    // Animación de parallax deshabilitada - la imagen se mantiene en su lugar
+    // window.addEventListener('scroll', function() {
+    //   const scrolled = window.scrollY;
+    //   if (heroImage) {
+    //     heroImage.style.transform = 'scale(1.1) translateY(' + scrolled * 0.3 + 'px)';
+    //   }
+    // });
 
     const heroContent = document.querySelector('.hero-content');
     document.addEventListener('mousemove', function(e) {
