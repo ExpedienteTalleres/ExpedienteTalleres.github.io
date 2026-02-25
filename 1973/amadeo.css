@@ -11,9 +11,22 @@
     --off-white: #f5f5f5;
     --dark: #1a1a1a;
     --gold: #c9a227;
+    --primary: #04162B;
+    --secondary: #EFEFF1;
+    --gold-light: #D4AF37;
 }
 
-html { scroll-behavior: smooth; }
+.box {
+    min-width: 100%;
+    min-height: 120px;
+    background-color: #04162B;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    border: none;
+    position: sticky;
+}
 
 .escudo {
     min-height: 75px;
@@ -23,6 +36,56 @@ html { scroll-behavior: smooth; }
     position: relative;
     left: 50%;
 }
+
+.nav {
+    background-color: #04162B;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 6px 20px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px #000;
+    z-index: 1000;
+}
+
+.nav__ul {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav__item {
+    list-style: none;
+}
+
+.nav__ul-container {
+    flex-grow: 4;
+    text-align: center;
+}
+
+.nav__link {
+    color: #eee;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px;
+    margin: 6px;
+    border-radius: 0;
+    transition: background-color 0.24s, border-radius 0.24s, outline 0.24s, outline-offset 0.24s;
+    margin: 2px;
+    outline: 0;
+    outline-offset: 0;
+}
+
+.nav__link:hover {
+    background-color: #647c9e;
+    outline: none;
+}
+
+html { scroll-behavior: smooth; }
 
 body {
     margin: 0px;
