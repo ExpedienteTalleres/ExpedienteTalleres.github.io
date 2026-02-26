@@ -26,7 +26,6 @@ observer.observe(el);
 });
 })();
 
-// ===== TIMELINE RENDERING =====
 (function () {
 var eventos = [
 { fecha: '11/10/1931', titulo: 'Primer partido', descripcion: 'Talleres 0 - 0 Rampla Juniors. Fue un amistoso.' },
@@ -80,7 +79,6 @@ item.appendChild(contentDiv);
 container.appendChild(item);
 });
 
-// Observe newly created timeline items
 var observer = new IntersectionObserver(function (entries) {
 entries.forEach(function (entry) {
 if (entry.isIntersecting) {
@@ -94,7 +92,6 @@ observer.observe(el);
 });
 })();
 
-// ===== IMAGE REVEAL (CANVAS) =====
 (function () {
 var canvas = document.getElementById('reveal-canvas');
 var wrapper = document.getElementById('canvas-wrapper');

@@ -1,13 +1,4 @@
-    // =================================================================
-    //  DATOS DE IDOLOS
-    //  Para agregar un nuevo idolo, simplemente agrega un nuevo objeto
-    //  al array. La pagina se adapta automaticamente.
-    //
-    //  imagen: ruta a la imagen (ej: "images/idolo1.jpg")
-    //  nombre: nombre completo del idolo
-    //  descripcionCorta: texto breve para la tarjeta (2-3 lineas)
-    //  descripcionLarga: texto completo para el modal
-    // =================================================================
+ 
     var idolos = [
       {
         imagen: 'idolo/Salvatelli.jpg',
@@ -58,8 +49,6 @@
         descripcionLarga: 'Descripcion mas amplia del idolo que aparecera al hacer clic en "Leer mas". Aqui se puede incluir toda la historia, logros, anecdotas y legado del jugador. Editar a mano.'
       },
     ];
-
-    // ===== NAVBAR SCROLL =====
     (function () {
       var navbar = document.getElementById('navbar');
       window.addEventListener('scroll', function () {
@@ -70,8 +59,6 @@
         }
       });
     })();
-
-    // ===== FADE-UP INTERSECTION OBSERVER =====
     var fadeObserver = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
@@ -83,8 +70,6 @@
     document.querySelectorAll('.fade-up').forEach(function (el) {
       fadeObserver.observe(el);
     });
-
-    // ===== RENDER IDOL CARDS =====
     var gridContainer = document.getElementById('idolos-grid');
     var noResults = document.getElementById('no-results');
     var cards = [];
@@ -124,8 +109,6 @@
 
       fadeObserver.observe(card);
     });
-
-    // ===== SEARCH FUNCTIONALITY =====
     var searchInput = document.getElementById('search-input');
     var searchBtn = document.getElementById('search-btn');
     var searchResultsInfo = document.getElementById('search-results-info');
@@ -134,7 +117,6 @@
       var query = searchInput.value.trim().toLowerCase();
 
       if (!query) {
-        // Show all cards
         cards.forEach(function (card) {
           card.classList.remove('hidden');
         });
@@ -192,8 +174,6 @@
         performSearch();
       }
     });
-
-    // ===== MODAL =====
     var modalOverlay = document.getElementById('modal-overlay');
     var modalContent = document.getElementById('modal-content');
     var modalCloseBtn = document.getElementById('modal-close-btn');
@@ -227,8 +207,6 @@
         document.body.style.overflow = '';
       }, 350);
     }
-
-    // Delegate click on "Leer mas" buttons
     gridContainer.addEventListener('click', function (e) {
       var btn = e.target.closest('.idol-read-more');
       if (btn) {
@@ -241,15 +219,11 @@
       e.stopPropagation();
       closeModal();
     });
-
-    // Close when clicking the overlay (outside modal-content)
     modalOverlay.addEventListener('click', function (e) {
       if (e.target === modalOverlay) {
         closeModal();
       }
     });
-
-    // Close on Escape key
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
         closeModal();

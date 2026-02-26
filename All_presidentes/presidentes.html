@@ -1,776 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Presidentes - Expediente Talleres</title>
-    <link rel="stylesheet" href="presidentes.css">
-    <link rel="icon" href="../Recursos/escudo.png" type="image/png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Presidentes - Expediente Talleres</title>
+  <meta name="description" content="Los presidentes que dirigieron los destinos de Talleres de Cordoba" />
+  <link rel="stylesheet" href="presidentes.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <nav class="navbar" id="navbar">
-        <a href="../index.html" class="nav-logo">EXPEDIENTE TALLERES</a>
-        <ul class="nav-menu">
-            <li class="nav-item"><a href="../All_Campañas/campañas.html" class="nav-link">Campañas</a></li>
-            <li class="nav-item"><a href="../Album/Album.html" class="nav-link">Álbum</a></li>
-            <li class="nav-item"><a href="../All_presidentes/presidentes.html" class="nav-link">Presidentes</a></li>
-            <li class="nav-item"><a href="../LaBoutique/boutique.html" class="nav-link">La Boutique</a></li>
-            <li class="nav-item"><a href="../Recaudaciones/recaudaciones.html" class="nav-link">Recaudaciones</a></li>
-            <li class="nav-item"><a href="../Idolos/idolos.html" class="nav-link">Idolos</a></li>
-            <li class="nav-item"><a href="../Caravanas/caravanas.html" class="nav-link">Caravanas</a></li>
-        </ul>
-    </nav>
-    <section class="carousel-section" id="presidentes">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">GALERÍA PRESIDENCIAL</span>
-                <h2 class="section-title">Todos Nuestros Presidentes</h2>
-            </div>
+  <nav class="navbar" id="navbar">
+    <a href="../index.html" class="nav-logo">EXPEDIENTE TALLERES</a>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="../All_Campañas/campañas.html" class="nav-link">Campañas</a></li>
+      <li class="nav-item"><a href="../Album/Album.html" class="nav-link">Álbum</a></li>
+      <li class="nav-item"><a href="presidentes.html" class="nav-link active">Presidentes</a></li>
+      <li class="nav-item"><a href="../LaBoutique/boutique.html" class="nav-link">La Boutique</a></li>
+      <li class="nav-item"><a href="../Recaudaciones/recaudaciones.html" class="nav-link">Recaudaciones</a></li>
+      <li class="nav-item"><a href="../Idolos/idolos.html" class="nav-link">Idolos</a></li>
+      <li class="nav-item"><a href="../Caravanas/caravanas.html" class="nav-link">Caravanas</a></li>
+    </ul>
+  </nav>
 
-            <div class="carousel-wrapper">
-                <button class="carousel-btn prev-btn" id="prevBtn">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M15 18l-6-6 6-6"/>
-                    </svg>
-                </button>
-                
-                <div class="carousel-container" id="carouselContainer">
-                    <div class="carousel-track" id="carouselTrack">
-                        <!-- Presidente 1 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 1">
-                                <div class="presidente-number">01</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Tomás Lawson</h3>
-                                <span class="presidente-period">1913</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 2 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 2">
-                                <div class="presidente-number">02</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Cipriano Sánchez</h3>
-                                <span class="presidente-period">1914</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 3 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 3">
-                                <div class="presidente-number">03</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Adolfo Hannel</h3>
-                                <span class="presidente-period">1915</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 4 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 4">
-                                <div class="presidente-number">04</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Enrique France</h3>
-                                <span class="presidente-period">1916 - 1917</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 5 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 5">
-                                <div class="presidente-number">05</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Romulo Canale</h3>
-                                <span class="presidente-period">1918</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 6 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 6">
-                                <div class="presidente-number">06</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Enrique Guillaume</h3>
-                                <span class="presidente-period">1919</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 7 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 7">
-                                <div class="presidente-number">07</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Juan Finlay</h3>
-                                <span class="presidente-period">1920</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 8 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 8">
-                                <div class="presidente-number">08</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Tomás Lawson</h3>
-                                <span class="presidente-period">1921</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 9 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 9">
-                                <div class="presidente-number">09</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Enrique Guillaume</h3>
-                                <span class="presidente-period">1922</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 10 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 10">
-                                <div class="presidente-number">10</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Juan Carlos O´Brien</h3>
-                                <span class="presidente-period">1923</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 11 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 11">
-                                <div class="presidente-number">11</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Antonio Estela</h3>
-                                <span class="presidente-period">1924</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 12 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 12">
-                                <div class="presidente-number">12</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Félix Bottini</h3>
-                                <span class="presidente-period">1925 - 1926</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 13 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 13">
-                                <div class="presidente-number">13</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Enrique France</h3>
-                                <span class="presidente-period">1927</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 14 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 14">
-                                <div class="presidente-number">14</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Alfredo Barissone</h3>
-                                <span class="presidente-period">1928</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 15 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 15">
-                                <div class="presidente-number">15</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Juan Dellacua</h3>
-                                <span class="presidente-period">1929</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 16 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 16">
-                                <div class="presidente-number">16</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Abel Pereyra</h3>
-                                <span class="presidente-period">1930</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 17 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 17">
-                                <div class="presidente-number">17</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Alberto Bernis Sales</h3>
-                                <span class="presidente-period">1931</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 18 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 18">
-                                <div class="presidente-number">18</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Miguel Tobler</h3>
-                                <span class="presidente-period">1932</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 19 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 19">
-                                <div class="presidente-number">19</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">José León Chercoles</h3>
-                                <span class="presidente-period">1933 - 1936</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 20 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 20">
-                                <div class="presidente-number">20</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Miguel Tobler</h3>
-                                <span class="presidente-period">1937</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 21 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 21">
-                                <div class="presidente-number">21</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Francisco Pérez Maciel</h3>
-                                <span class="presidente-period">1938</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 22 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 22">
-                                <div class="presidente-number">22</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Miguel Tobler</h3>
-                                <span class="presidente-period">1939 - 1940</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 23 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 23">
-                                <div class="presidente-number">23</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Ángel Peralta</h3>
-                                <span class="presidente-period">1941 - 1942</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 24 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 24">
-                                <div class="presidente-number">24</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Luis Zapata</h3>
-                                <span class="presidente-period">1943</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 25 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 25">
-                                <div class="presidente-number">25</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Carlos Molina</h3>
-                                <span class="presidente-period">1944 - 1946</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 26 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 26">
-                                <div class="presidente-number">26</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Edgardo Pérez Cortés</h3>
-                                <span class="presidente-period">1947 - 1950</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 27 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 27">
-                                <div class="presidente-number">27</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Félix Curtino</h3>
-                                <span class="presidente-period">1951 - 1952</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 28 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 28">
-                                <div class="presidente-number">28</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Enrique Carratala</h3>
-                                <span class="presidente-period">1953</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 29 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 29">
-                                <div class="presidente-number">29</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Félix Curtino</h3>
-                                <span class="presidente-period">1954 - 1955</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 30 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 30">
-                                <div class="presidente-number">30</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Aníbal Grecco</h3>
-                                <span class="presidente-period">1956 - 1957</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 31 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 31">
-                                <div class="presidente-number">31</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Pedro Ballester</h3>
-                                <span class="presidente-period">1958 - 1959</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 32 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 32">
-                                <div class="presidente-number">32</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Vicente Rossella</h3>
-                                <span class="presidente-period">1960 - 1961</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 33 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 33">
-                                <div class="presidente-number">33</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Arturo Carrasco Gómez</h3>
-                                <span class="presidente-period">1962</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 34 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 34">
-                                <div class="presidente-number">34</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Edgardo Álvarez Voscos</h3>
-                                <span class="presidente-period">1963</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 35 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 35">
-                                <div class="presidente-number">35</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Félix Curtino</h3>
-                                <span class="presidente-period">1964</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 36 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 36">
-                                <div class="presidente-number">36</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Alfredo Arocena</h3>
-                                <span class="presidente-period">1965</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 37 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 37">
-                                <div class="presidente-number">37</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Edgardo Álvarez Voscos</h3>
-                                <span class="presidente-period">1966</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 38 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 38">
-                                <div class="presidente-number">38</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Rodolfo Berardo</h3>
-                                <span class="presidente-period">1967 - 1968</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 39 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 39">
-                                <div class="presidente-number">39</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Luis Teco</h3>
-                                <span class="presidente-period">1969</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 40 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 40">
-                                <div class="presidente-number">40</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Abrahan Litvak</h3>
-                                <span class="presidente-period">1970</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 41 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 41">
-                                <div class="presidente-number">41</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Avelino Guirales</h3>
-                                <span class="presidente-period">1971</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 42 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 42">
-                                <div class="presidente-number">42</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Miguel Srur</h3>
-                                <span class="presidente-period">1972</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 43 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 43">
-                                <div class="presidente-number">43</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Fernando Rencoret</h3>
-                                <span class="presidente-period">1973</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 44 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="./Presidentes/amadeo.jpg" alt="Presidente 44">
-                                <div class="presidente-number">44</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Amadeo Nuccetelli</h3>
-                                <span class="presidente-period">1974 - 1986</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 45 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 45">
-                                <div class="presidente-number">45</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Rogelio Edgea</h3>
-                                <span class="presidente-period">1987</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 46 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 46">
-                                <div class="presidente-number">46</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Miguel Macias</h3>
-                                <span class="presidente-period">1988</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 47 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 47">
-                                <div class="presidente-number">47</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Egidio Heyd</h3>
-                                <span class="presidente-period">1989</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 48 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 48">
-                                <div class="presidente-number">48</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Miguel Macias</h3>
-                                <span class="presidente-period">1988</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 49 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 49">
-                                <div class="presidente-number">49</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Egidio Heyd</h3>
-                                <span class="presidente-period">1989</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 50 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 50">
-                                <div class="presidente-number">50</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Bernabé Muttoni</h3>
-                                <span class="presidente-period">1990 - 1991</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 51 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 51">
-                                <div class="presidente-number">51</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Miguel Srur</h3>
-                                <span class="presidente-period">1992</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 52 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 52">
-                                <div class="presidente-number">52</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Rafael Lascano</h3>
-                                <span class="presidente-period">1993</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 53 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 53">
-                                <div class="presidente-number">53</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Victor Szumik</h3>
-                                <span class="presidente-period">1994 - 1997</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 54 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 54">
-                                <div class="presidente-number">54</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Ronaldo Martín</h3>
-                                <span class="presidente-period">1997</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 55 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 55">
-                                <div class="presidente-number">55</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Carlos Dossetti</h3>
-                                <span class="presidente-period">1998 - 2004</span>
-                            </div>
-                        </div>
-                        <!-- Presidente 56 -->
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="/placeholder.svg?height=280&width=220" alt="Presidente 56">
-                                <div class="presidente-number">56</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Club Gerenciado</h3>
-                                <span class="presidente-period">2004 - 2014</span>
-                            </div>
-                        </div>
-                        <div class="presidente-card">
-                            <div class="presidente-image">
-                                <img src="../All_presidentes/Presidentes/Andres Fassi.png" alt="Presidente 56">
-                                <div class="presidente-number">57</div>
-                            </div>
-                            <div class="presidente-info">
-                                <h3 class="presidente-name">Andres Fassi</h3>
-                                <span class="presidente-period">2014 - Presente</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
 
-                <button class="carousel-btn next-btn" id="nextBtn">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M9 18l6-6-6-6"/>
-                    </svg>
-                </button>
-            </div>
+      <div class="hero-content">
+        <p class="fade-up hero-subtitle">Expediente Talleres</p>
+        <h1 class="fade-up hero-title" style="transition-delay: 100ms;">Presidentes</h1>
+        <div class="fade-up hero-divider" style="transition-delay: 200ms;"></div>
+        <p class="fade-up hero-desc" style="transition-delay: 300ms;">
+          Los hombres que tomaron las riendas del club en cada epoca, guiaron sus destinos y forjaron la grandeza institucional de Talleres.
+        </p>
+      </div>
 
-            <!-- Carousel Indicators -->
-            <div class="carousel-indicators" id="carouselIndicators"></div>
-        </div>
+      <div class="hero-fade-bottom"></div>
     </section>
 
-    <!-- Presidentes Destacados Section -->
-    <section class="destacados-section" id="destacados">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">LEGADO INSTITUCIONAL</span>
-                <h2 class="section-title">Presidentes Destacados</h2>
-            </div>
+    <section class="carousel-section" id="carousel-section">
+      <div class="carousel-header fade-up">
+        <h2>Todos los Presidentes</h2>
+        <p>57 mandatarios en la historia del club</p>
+      </div>
 
-            <div class="destacados-grid">
-                <!-- Presidente Destacado 1 -->
-                <div class="destacado-card">
-                    <div class="destacado-image-container">
-                        <img src="./Presidentes/lawson.png" alt="Presidente Destacado 1" class="destacado-image">
-                        <div class="destacado-overlay">
-                        </div>
-                    </div>
-                    <div class="destacado-content">
-                        <h3 class="destacado-name">Tomás Lawson</h3>
-                        <p class="destacado-description">
-                            Tomás Lawson fue una figura fundamental en la historia del Club Atlético Talleres. De origen inglés, llegó a Argentina a principios del siglo XX y se convirtió en el alma mater del equipo cordobés. Fue quien, en 1913, junto a otros apasionados por el fútbol, fundó el club. Lawson no solo fue el fundador, sino también el primer presidente de Talleres, dejando una huella imborrable en la institución. Su visión y su liderazgo fueron pilares fundamentales para construir las bases de lo que hoy es uno de los clubes más importantes de Córdoba.
-                        </p>
-                    </div>
-                </div>
+      <div class="carousel-wrapper" id="carousel-wrapper">
+        <button class="carousel-arrow carousel-arrow-left" id="carousel-prev" aria-label="Anterior" disabled>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
 
-                <!-- Presidente Destacado 2 -->
-                <div class="destacado-card">
-                    <div class="destacado-image-container">
-                        <img src="./Presidentes/amadeo.jpg"Presidente Destacado 2" class="destacado-image">
-                        <div class="destacado-overlay">
-                        </div>
-                    </div>
-                    <div class="destacado-content">
-                        <h3 class="destacado-name">Amadeo Nuccetelli</h3>
-                        <p class="destacado-description">
-                            Amadeo Nuccetelli fue un empresario cordobés que dejó una huella imborrable en el Club Atlético Talleres. Durante sus múltiples períodos como presidente, entre los años 1974 y 1987, fue el artífice de una de las épocas más gloriosas de la institución. Su gestión se caracterizó por una visión a largo plazo y una fuerte inversión en infraestructura y en la contratación de jugadores de renombre. Nuccetelli fue el responsable de llevar a Talleres a competir en los primeros planos del fútbol argentino, consolidándolo como uno de los equipos más importantes del interior del país. Su legado trasciende más allá de los resultados deportivos. Su pasión y compromiso con el club lo convirtieron en un verdadero ídolo para la hinchada albiazul. Hoy, el Centro de Alto Rendimiento del club lleva su nombre en honor a su invaluable contribución.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Presidente Destacado 3 -->
-                <div class="destacado-card">
-                    <div class="destacado-image-container">
-                        <img src="./Presidentes/Dossetti.jpg" alt="Presidente Destacado 3" class="destacado-image">
-                        <div class="destacado-overlay">
-                        </div>
-                    </div>
-                    <div class="destacado-content">
-                        <h3 class="destacado-name">Carlos Dossetti</h3>
-                        <p class="destacado-description">
-                            Carlos Dossetti fue un presidente que generó muchisima controversia durante su gestión. Si bien es recordado por uno de los logros más importante del club, la Copa Conmebol de 1999. Su administración estuvo marcada por el endeudamiento y posterior quiebra de la institución en 2004. Además, Dossetti se vio envuelto en diversas polémicas extradeportivas, incluyendo investigaciones judiciales por presunto uso irregular de documentos y vinculaciones con casos de corrupción. Su gestión dejó una huella ambivalente en la historia de Talleres. Combinando un éxito deportivo sin precedentes con un profundo descalabro económico e institucional.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Presidente Destacado 4 -->
-                <div class="destacado-card">
-                    <div class="destacado-image-container">
-                        <img src="./Presidentes/fassi.jpg" alt="Presidente Destacado 4" class="destacado-image">
-                        <div class="destacado-overlay">
-                        </div>
-                    </div>
-                    <div class="destacado-content">
-                        <h3 class="destacado-name">Andrés Fassi</h3>
-                        <p class="destacado-description">
-                            Andrés Fassi es el actual presidente de Talleres. Su gestión, que comenzó en 2014, se ha caracterizado por una fuerte reestructuración del club en todos los niveles buscando recuperar la grandeza institucional y deportiva. Fassi impulsó un proyecto integral que abarcó desde la infraestructura hasta la profesionalización de la gestión y el fortalecimiento de las divisiones inferiores. Bajo su mandato, Talleres logró el ascenso a Primera División en 2016 y se ha mantenido como un protagonista constante en el fútbol argentino clasificando a competiciones internacionales en varias ocasiones. Sin embargo, su gestión también ha tenido momentos de controversia como la reciente suspensión por parte del Tribunal de Disciplina de la AFA en 2024, tras incidentes en un partido contra Boca Juniors. A pesar de esto, Fassi es considerado una figura clave en la recuperación y el crecimiento de Talleres en los últimos años.
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="carousel-track-container">
+          <div class="carousel-track" id="carousel-track">
+          </div>
         </div>
+
+        <button class="carousel-arrow carousel-arrow-right" id="carousel-next" aria-label="Siguiente">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="carousel-dots" id="carousel-dots"></div>
+      <div class="carousel-counter" id="carousel-counter"></div>
     </section>
-    <footer>
-        <p>© 2025 Expediente Talleres. Este sitio no es oficial ni está afiliado con el Club Atletico Talleres.</p>
-        <p>Las imágenes y contenidos relacionados con el club son propiedad de sus respectivos dueños.</p>
-        <p>Fotografías de Gabriel Incardona utilizadas con fines ilustrativos. Todos los derechos pertenecen a sus autores.</p>
-        <p>Para reclamos o contacto: <a class="links" href="expedientetalleres@gmail.com">expedientetalleres@gmail.com</a></p>
 
-        <div style="margin-top: 1rem;">
-            <strong>Redes sociales del sitio:</strong><br>
-            <a class="links" href="https://www.instagram.com/expedientecat/" target="_blank">Instagram</a> |
-            <a class="links" href="https://x.com/ExpedienteCat" target="_blank">Twitter/X</a>
-        </div>
+    <section class="destacados-section" id="destacados-section">
+      <div class="destacados-header fade-up">
+        <h2>Presidentes Destacados</h2>
+        <div class="destacados-header-divider"></div>
+        <p>
+          Aquellos dirigentes cuya vision, liderazgo y entrega dejaron una huella imborrable en la historia de Talleres. Bajo su conduccion, el club alcanzo hitos que marcaron su identidad para siempre.
+        </p>
+      </div>
 
-        <div style="margin-top: 1rem;">
-            <strong>Gabriel Incardona:</strong><br>
-            <a class="links" href="https://www.instagram.com/gabiincardona17/" target="_blank">Instagram</a> |
-            <a class="links" href="https://x.com/GabiIncardona17" target="_blank">Twitter/X</a> |
-            <a class="links" href="https://www.youtube.com/@grandeporsuhistoria">Youtube</a> |
-            <a class="links" href="https://www.facebook.com/gabiincardona17/" target="_blank">Facebook</a>
-        </div>
-    </footer>
-    <script src="./presidentes.js"></script>
-    <script src="../inicio.js"></script>
+      <div class="destacados-grid" id="destacados-grid">
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-title">Expediente Talleres</p>
+      <div class="footer-divider"></div>
+      <p class="footer-sub">Presidentes &mdash; Desde 1913 escribiendo la historia</p>
+    </div>
+  </footer>
+  <script src="presidentes.js"></script>
 </body>
 </html>

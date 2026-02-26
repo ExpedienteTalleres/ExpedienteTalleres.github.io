@@ -1,5 +1,5 @@
 
-    /* ===== RESET & BASE ===== */
+    
     *, *::before, *::after {
       margin: 0;
       padding: 0;
@@ -16,6 +16,8 @@
       --border: #2a3444;
       --font-sans: 'Inter', sans-serif;
       --font-serif: 'Playfair Display', serif;
+      --gold: #c9a227;
+      --gold-light: #d4af37;
     }
 
     html {
@@ -46,7 +48,6 @@
       cursor: pointer;
     }
 
-    /* ===== ANIMATIONS ===== */
     .fade-up {
       opacity: 0;
       transform: translateY(24px);
@@ -58,7 +59,6 @@
       transform: translateY(0);
     }
 
-    /* ===== NAVBAR ===== */
     .navbar {
       position: fixed;
       top: 0;
@@ -84,10 +84,11 @@
       color: var(--fg);
       letter-spacing: 0.2em;
       text-decoration: none;
+      transition: all 0.3s ease;
     }
 
     .nav-logo:hover {
-      color: var(--accent);
+      color: var(--gold-light);
       text-shadow: 0 0 20px rgba(201, 168, 76, 0.5);
     }
 
@@ -110,6 +111,7 @@
       letter-spacing: 0.15em;
       text-transform: uppercase;
       padding: 0.75rem 1rem;
+      transition: all 0.3s ease;
       position: relative;
     }
 
@@ -121,18 +123,18 @@
       transform: translateX(-50%);
       width: 0;
       height: 1px;
-      background: var(--);
+      background: var(--gold-light);
+      transition: width 0.3s ease;
     }
 
     .nav-link:hover {
-      color: var(--fg);
+      color: var(--gold-light);
     }
 
     .nav-link:hover::after {
       width: 60%;
     }
 
-    /* ===== HERO ===== */
     .hero {
       position: relative;
       display: flex;
@@ -199,7 +201,6 @@
       background: linear-gradient(to top, var(--bg), transparent);
     }
 
-    /* ===== SEARCH SECTION ===== */
     .search-section {
       padding: 0 1.5rem 4rem;
     }
@@ -286,7 +287,6 @@
       color: var(--fg);
     }
 
-    /* ===== IDOLOS GRID ===== */
     .idolos-section {
       padding: 0 1.5rem 5rem;
     }
@@ -406,7 +406,6 @@
       transform: translateX(3px);
     }
 
-    /* ===== NO RESULTS ===== */
     .no-results {
       display: none;
       text-align: center;
@@ -437,7 +436,6 @@
       color: var(--muted);
     }
 
-    /* ===== MODAL ===== */
     .modal-overlay {
       display: none;
       position: fixed;
@@ -576,7 +574,6 @@
       color: var(--muted);
     }
 
-    /* ===== FOOTER ===== */
     .site-footer {
       border-top: 1px solid var(--border);
       padding: 3rem 1.5rem;
@@ -610,7 +607,6 @@
       color: rgba(139, 155, 180, 0.6);
     }
 
-    /* ===== RESPONSIVE ===== */
     @media (min-width: 640px) {
       .idolos-grid {
         grid-template-columns: repeat(2, 1fr);
