@@ -43,6 +43,24 @@
         descripcionLarga: 'José Daniel Valencia comenzó su carrera en Gimnasia y Esgrima de Jujuy. En 1975, se incorporó a Talleres de Córdoba, donde desarrolló la mayor parte de su carrera futbolística. Durante sus 12 años en el club, jugó 344 partidos y marcó 42 goles, convirtiéndose en uno de los máximos ídolos de la institución. Fue una pieza clave en el equipo que obtuvo el subcampeonato en el Torneo Nacional de 1977, tras una destacada campaña. Su habilidad para manejar ambos perfiles y su inteligencia táctica lo destacaron como un mediocampista excepcional. Su desempeño en Talleres le valió la convocatoria a la Selección Argentina, con la que disputó los Mundiales de 1978 y 1982. En el Mundial de 1978, fue titular en los primeros partidos y contribuyó al título obtenido por el equipo dirigido por César Luis Menotti.'
       },
       {
+        imagen: 'idolo/Bravo.jpg',
+        nombre: 'Humberto Bravo',
+        descripcionCorta: 'Delantero histórico, goleador carismático apodado y referente popular entre los hinchas.',
+        descripcionLarga: 'Nació en Añatuya (Santiago del Estero) el 2 de febrero de 1951 y se destacó como delantero, en Talleres jugó en dos ciclos durante la década de 1970 y principios de los 80. Fue uno de los máximos goleadores del club: acumuló centenas de partidos y goles contando competencias oficiales y provinciales. En su carrera en Talleres dejó momentos emblemáticos: convirtió cuatro goles en un clásico contra Belgrano (25 de mayo de 1976) y anotó el gol decisivo que clasificó al equipo a la final del Nacional de 1977. Además estuvo en la órbita de la Selección argentina (fue preseleccionado para el Mundial 1978 pero no entró en la lista definitiva). Tras retirarse continuó ligado a Córdoba y a la gente del club, incluso con actividades fuera del fútbol (administró un bar en barrio Jardín, muy cercano a La Boutique). Su figura es evocada por generaciones de hinchas por combinación de goles, entrega y cercanía.'
+      },
+      {
+        imagen: 'idolo/Romero.jpg',
+        nombre: 'Miguel Antonio Romero',
+        descripcionCorta: 'Apodado “La Wanora”, máximo goleador del club con 163 goles entre 1955 y 1968.',
+        descripcionLarga: 'Nació en Cruz del Eje un 19 de julio de 1933, conocido como “La Wanora”, fue un delantero que dejó una huella indeleble en la historia de Talleres. Debutó en 1955 y, en dos etapas con el club, disputó alrededor de 242 partidos y anotó 163 goles, registro que lo consagra como el máximo goleador histórico. Se destacó además por su efectividad en clásicos: le convirtió a Belgrano cerca de 19 tantos en 28 enfrentamientos, y su estilo técnico y sentido del gol lo transformaron en símbolo del club y en figura permanente en la memoria de los hinchas. Tras su retiro se mantuvo vinculado al fútbol local (pasó por roles técnicos y trabajo con divisiones formativas) y fue recordado por su conducta deportiva y por el lugar privilegiado que ocupa en los rankings goleadores y en los homenajes oficiales del club.'
+      },
+      {
+        imagen: 'idolo/Zelaya.png',
+        nombre: 'José Alfredo Zelaya',
+        descripcionCorta: 'Delantero tucumano, goleador en los 90 apodado; autor del gol clave en la final contra Belgrano.',
+        descripcionLarga: 'Nació un 6 de diciembre de 1968 en San Miguel de Tucumán fue un delantero que se destacó en el fútbol del norte argentino antes de llegar a Talleres. Jugó en la “T” en los ciclos 1996–1999 y 2000–2001, sumando en AFA unos 135 partidos y 51 goles; quedó en la memoria por goles decisivos —marcó el 1-0 en la ida de la final de 1998 que terminó consagrando el ascenso— y por actuaciones memorables frente a rivales clásicos.'
+      },
+      {
         imagen: 'idolo/Herrera.png',
         nombre: 'Guido Gabriel Herrera',
         descripcionCorta: 'Idolo por su constancia, protagonista en la consagración de la Supercopa Internacional.',
