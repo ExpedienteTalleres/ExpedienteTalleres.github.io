@@ -21,10 +21,14 @@ color: var(--fg);
 overflow-x: hidden;
 }
 
- * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -158,16 +162,6 @@ inset: 0;
 background: linear-gradient(to bottom, var(--bg), rgba(13, 17, 23, 0.8), var(--bg));
 }
 
-.hero-line-top {
-position: absolute;
-top: 0;
-left: 50%;
-transform: translateX(-50%);
-width: 1px;
-height: 6rem;
-background: linear-gradient(to bottom, transparent, rgba(201, 168, 76, 0.4));
-}
-
 .hero-content {
 position: relative;
 z-index: 10;
@@ -239,12 +233,13 @@ color: var(--muted);
 }
 
 .hero-fade-bottom {
-position: absolute;
-bottom: 0;
-left: 0;
-right: 0;
-height: 8rem;
-background: linear-gradient(to top, var(--bg), transparent);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 8rem;
+  background: linear-gradient(to top, var(--bg), transparent);
+  z-index: 1; /* ensure fade is visible above overlays/content */
 }
 
 /* ===== FICHA SECTION ===== */

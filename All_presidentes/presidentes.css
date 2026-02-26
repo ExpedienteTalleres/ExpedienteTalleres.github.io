@@ -3,76 +3,96 @@
   --secondary: #EFEFF1;
   --gold: #C9A227;
   --gold-light: #D4AF37;
+  --bg: var(--primary);
 }
 
-.box {
-    min-width: 100%;
-    min-height: 120px;
-    background-color: #04162B;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-    border: none;
-    position: sticky;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.escudo {
-    min-height: 75px;
-    max-height: 75px;
-    margin: 20px 80px 20px -35px;
-    display: flex;
-    position: relative;
-    left: 50%;
+html {
+  scroll-behavior: smooth;
 }
 
-.nav {
-    background-color: #04162B;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 6px 20px;
-    position: sticky;
-    top: 0;
-    margin-bottom: 10px;
-    box-shadow: 0px 0px 10px #000;
-    z-index: 1000;
+/* responsive tweaks for navbar width */
+@media (max-width: 1024px) {
+  .navbar { padding: 1rem 1rem; }
+  .nav-menu { font-size: 0.65rem; gap: 0.2rem; }
 }
 
-.nav__ul {
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
+/* Navbar styles copied from main index */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 4rem; /* tighter spacing to fit links */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  transition: all 0.4s ease;
+  background-color: var(--primary);
+}
+.navbar.scrolled {
+  background: rgba(4, 22, 43, 0.95);
+  padding: 1rem 4rem;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+.nav-logo {
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--secondary);
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.nav-logo:hover {
+  color: var(--gold);
+  text-shadow: 0 0 20px rgba(201, 162, 39, 0.5);
+}
+.nav-menu {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+.nav-item {
+  position: relative;
+}
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;            /* smaller text for width */
+  font-weight: 500;
+  color: var(--secondary);
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.75rem 1rem;       /* reduced padding */
+  transition: all 0.3s ease;
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 1px;
+  background: var(--gold-light);
+  transition: width 0.3s ease;
+}
+.nav-link:hover {
+  color: var(--gold-light);
+}
+.nav-link:hover::after {
+  width: 60%;
 }
 
-.nav__item {
-    list-style: none;
-}
-
-.nav__ul-container {
-    flex-grow: 4;
-    text-align: center;
-}
-
-.nav__link {
-    color: #eee;
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px;
-    margin: 6px;
-    border-radius: 0;
-    transition: background-color 0.24s, border-radius 0.24s, outline 0.24s, outline-offset 0.24s;
-    margin: 2px;
-    outline: 0;
-    outline-offset: 0;
-}
-
-.nav__link:hover {
-    background-color: #647c9e;
-    outline: none;
-}
 
 body {
     margin: 0px;
@@ -113,8 +133,9 @@ footer {
 
 
 .container {
-    padding: 20px;
-    background: #F8F9FA;
+  margin-top: 65px;
+  padding: 20px;
+  background: #F8F9FA;
 }
 
 .title, .subtitle {
@@ -699,7 +720,6 @@ footer {
 }
 
 .destacados-section .section-badge {
-  background: var(--gold);
   color: #04162B;
 }
 
@@ -876,8 +896,9 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
+  .nav-menu {
+    font-size: 0.65rem;   /* shrink further on narrow screens */
+    gap: 0.2rem;
   }
 
   .carousel-section {

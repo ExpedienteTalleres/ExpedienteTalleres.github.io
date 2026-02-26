@@ -483,6 +483,8 @@ footer {
   --gold: #C9A227;
   --gold-light: #D4AF37;
   --dark-overlay: rgba(4, 22, 43, 0.75);
+  --bg: var(--primary);
+  --font-serif: 'Playfair Display', serif;
 }
 
 * {
@@ -515,7 +517,6 @@ body {
   transition: all 0.4s ease;
 }
 .navbar.scrolled {
-  background: rgba(4, 22, 43, 0.95);
   padding: 1rem 4rem;
   backdrop-filter: blur(20px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
@@ -636,6 +637,17 @@ body {
   height: 0;
   animation: lineGrow 2s ease 1.2s forwards;
 }
+
+.hero-fade-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 8rem;
+  background: linear-gradient(to top, var(--bg), transparent);
+  z-index: 1;
+}
+
 @keyframes lineGrow {
   to { height: 150px; }
 }
@@ -670,7 +682,8 @@ body {
   to { opacity: 1; }
 }
 .hero-title {
-  font-family: 'Cinzel', serif;
+  font-family: var(--font-serif);
+  font-style: italic;
   font-size: clamp(2.5rem, 7vw, 5rem);
   font-weight: 700;
   color: var(--secondary);
