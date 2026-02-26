@@ -41,7 +41,6 @@ max-width: 100%;
 display: block;
 }
 
-/* ===== ANIMATIONS ===== */
 .fade-up {
 opacity: 0;
 transform: translateY(24px);
@@ -53,7 +52,6 @@ opacity: 1;
 transform: translateY(0);
 }
 
-/* ===== NAVBAR ===== */
 .navbar {
   position: fixed;
   top: 0;
