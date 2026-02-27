@@ -141,9 +141,24 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 55vh;
-      padding: 8rem 1.5rem 4rem;
+      min-height: 80vh;
+      padding: 6rem 1.5rem; /* same as boutique */
       text-align: center;
+      margin-top: 60px; /* navbar offset */
+    }
+
+    .hero-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+    }
+    .hero-background img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .hero-overlay {
@@ -209,6 +224,7 @@
       right: 0;
       height: 8rem;
       background: linear-gradient(to top, var(--bg), transparent);
+      z-index: 1;
     }
 
     .hero-nav-btns {
@@ -277,7 +293,6 @@
 
     .caravanas-section {
       padding: 3rem 1.5rem 5rem;
-      border-top: 1px solid var(--border);
     }
 
     .caravanas-list {
@@ -674,10 +689,7 @@
         font-size: 4.5rem;
       }
 
-      .hero {
-        min-height: 50vh;
-        padding: 10rem 3rem 5rem;
-      }
+      /* hero uses base spacing and margin-top from root rules */
 
       .caravanas-section {
         padding: 4rem 3rem 5rem;
